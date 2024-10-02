@@ -29,7 +29,7 @@ namespace PrimeritaConsola
             return splittedDatosIntTriangulo;
         }
         /// <summary>
-        /// 
+        /// Comprueba que un numero sea primo
         /// </summary>
         /// <param name="val"></param>
         /// <returns></returns>
@@ -43,6 +43,22 @@ namespace PrimeritaConsola
                 }
             }
             return true;
+        }
+
+        /// <summary>
+        /// Devuelve un numero obtenido por consola
+        /// </summary>
+        /// <returns></returns>
+        public static int GetNumeroPorConsola()
+        {
+            Console.WriteLine("Escribe un número por consola");
+            string? edad = Console.ReadLine();
+            if (!int.TryParse(edad, out int val))
+            {
+                Console.WriteLine("No has introducido un número");
+                return 0;
+            }
+            return val;
         }
 
     }

@@ -6,7 +6,7 @@
         {
             IEjecutarEjercicio ejercicio;
 
-           ejercicio= new EjercicioArrayPrimos();
+           ejercicio= new EjercicioBinario();
            ejercicio.Ejecutar();
 
         }
