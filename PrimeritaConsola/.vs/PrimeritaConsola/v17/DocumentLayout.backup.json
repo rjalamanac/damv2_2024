@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\source\\repos\\primeritaconsola\\ejerciciotriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:ejerciciotriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\source\\repos\\primeritaconsola\\ejercicioprimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:ejercicioprimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\source\\repos\\primeritaconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\source\\repos\\primeritaconsola\\iejecutarejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:iejecutarejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEjecutarEjercicio.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\IEjecutarEjercicio.cs",
+              "RelativeDocumentMoniker": "IEjecutarEjercicio.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\IEjecutarEjercicio.cs",
+              "RelativeToolTip": "IEjecutarEjercicio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T19:38:12.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EjercicioTriangulo.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\EjercicioTriangulo.cs",
+              "RelativeDocumentMoniker": "EjercicioTriangulo.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\EjercicioTriangulo.cs",
+              "RelativeToolTip": "EjercicioTriangulo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T19:05:37.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EjercicioPrimo.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\EjercicioPrimo.cs",
+              "RelativeDocumentMoniker": "EjercicioPrimo.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\EjercicioPrimo.cs",
+              "RelativeToolTip": "EjercicioPrimo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T19:04:59.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T19:01:45.633Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

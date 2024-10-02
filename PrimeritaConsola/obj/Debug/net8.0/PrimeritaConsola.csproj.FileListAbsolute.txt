@@ -1,0 +1,14 @@
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\bin\Debug\net8.0\PrimeritaConsola.exe
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\bin\Debug\net8.0\PrimeritaConsola.deps.json
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\bin\Debug\net8.0\PrimeritaConsola.runtimeconfig.json
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\bin\Debug\net8.0\PrimeritaConsola.dll
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\bin\Debug\net8.0\PrimeritaConsola.pdb
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\obj\Debug\net8.0\PrimeritaConsola.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\obj\Debug\net8.0\PrimeritaConsola.AssemblyInfoInputs.cache
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\obj\Debug\net8.0\PrimeritaConsola.AssemblyInfo.cs
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\obj\Debug\net8.0\PrimeritaConsola.csproj.CoreCompileInputs.cache
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\obj\Debug\net8.0\PrimeritaConsola.dll
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\obj\Debug\net8.0\refint\PrimeritaConsola.dll
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\obj\Debug\net8.0\PrimeritaConsola.pdb
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\obj\Debug\net8.0\PrimeritaConsola.genruntimeconfig.cache
+C:\Users\ProfVespertino\source\repos\PrimeritaConsola\obj\Debug\net8.0\ref\PrimeritaConsola.dll
