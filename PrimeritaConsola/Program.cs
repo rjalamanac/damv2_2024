@@ -6,11 +6,8 @@
         {
             IEjecutarEjercicio ejercicio;
 
-            ejercicio = new EjercicioPrimo();
-            ejercicio.Ejecutar();
-
-            ejercicio = new EjercicioTriangulo();
-            ejercicio.Ejecutar();
+           ejercicio= new EjercicioArrayPrimos();
+           ejercicio.Ejecutar();
 
         }
     }

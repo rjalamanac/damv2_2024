@@ -13,18 +13,8 @@ namespace PrimeritaConsola
             Console.WriteLine("Introduce 3 dígitos separados con comas");
             string? datosTriangulo = Console.ReadLine();
 
-            string[] splittedDatosTriangulo = datosTriangulo?.Split(",") ?? []; 
-
-            List<int>splittedDatosIntTriangulo = new List<int>();
-            foreach (string dato in splittedDatosTriangulo)
-            {
-                if (!int.TryParse(dato, out int val))
-                {
-                    Console.WriteLine("No has introducido un número");
-                    return;
-                }
-                splittedDatosIntTriangulo.Add(val);
-            }
+            List<int> splittedDatosIntTriangulo = Utils.GetListNumbersFromString(datosTriangulo);
+           
             if (splittedDatosIntTriangulo.Count !=3) {
                 Console.WriteLine("Tienes que introducir 3 dígitos separados con comas");
                 return;

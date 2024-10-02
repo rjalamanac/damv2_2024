@@ -1,21 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\",
+  "WorkspaceRootPath": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\source\\repos\\primeritaconsola\\ejerciciotriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:ejerciciotriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\primeritaconsola\\ejercicioarrayprimos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:ejercicioarrayprimos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\source\\repos\\primeritaconsola\\ejercicioprimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:ejercicioprimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\source\\repos\\primeritaconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\primeritaconsola\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\source\\repos\\primeritaconsola\\iejecutarejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\primeritaconsola\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\primeritaconsola\\ejercicioprimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:ejercicioprimo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\primeritaconsola\\ejerciciotriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:ejerciciotriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\primeritaconsola\\iejecutarejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}|PrimeritaConsola.csproj|solutionrelative:iejecutarejercicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,52 +38,78 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\Utils.cs",
+              "RelativeDocumentMoniker": "Utils.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\Utils.cs",
+              "RelativeToolTip": "Utils.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T14:46:28.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EjercicioArrayPrimos.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\EjercicioArrayPrimos.cs",
+              "RelativeDocumentMoniker": "EjercicioArrayPrimos.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\EjercicioArrayPrimos.cs",
+              "RelativeToolTip": "EjercicioArrayPrimos.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBYAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-02T14:44:20.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "IEjecutarEjercicio.cs",
-              "DocumentMoniker": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\IEjecutarEjercicio.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\IEjecutarEjercicio.cs",
               "RelativeDocumentMoniker": "IEjecutarEjercicio.cs",
-              "ToolTip": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\IEjecutarEjercicio.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\IEjecutarEjercicio.cs",
               "RelativeToolTip": "IEjecutarEjercicio.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T19:38:12.537Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "EjercicioTriangulo.cs",
-              "DocumentMoniker": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\EjercicioTriangulo.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\EjercicioTriangulo.cs",
               "RelativeDocumentMoniker": "EjercicioTriangulo.cs",
-              "ToolTip": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\EjercicioTriangulo.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\EjercicioTriangulo.cs",
               "RelativeToolTip": "EjercicioTriangulo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA8AAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T19:05:37.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "EjercicioPrimo.cs",
-              "DocumentMoniker": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\EjercicioPrimo.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\EjercicioPrimo.cs",
               "RelativeDocumentMoniker": "EjercicioPrimo.cs",
-              "ToolTip": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\EjercicioPrimo.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\EjercicioPrimo.cs",
               "RelativeToolTip": "EjercicioPrimo.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T19:04:59.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\ProfVespertino\\source\\repos\\PrimeritaConsola\\Program.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T19:01:45.633Z",
               "EditorCaption": ""
