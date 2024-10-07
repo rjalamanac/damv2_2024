@@ -4,9 +4,9 @@
     {
         public static void Main()
         {
-            IEjecutarEjercicio ejercicio;
+           IEjecutarEjercicio ejercicio;
 
-           ejercicio= new EjercicioBinario();
+           ejercicio= new EjercicioTres();
            ejercicio.Ejecutar();
 
         }
