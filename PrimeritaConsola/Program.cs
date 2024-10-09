@@ -6,7 +6,7 @@
         {
            IEjecutarEjercicio ejercicio;
 
-           ejercicio= new EjercicioTres();
+           ejercicio= new EjercicioSingleton();
            ejercicio.Ejecutar();
 
         }
