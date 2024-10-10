@@ -3,10 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\gestordetareas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\services\\gestoropciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\utils\\stringutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\utils\\fileutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\interfaces\\igestoropciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -15,28 +15,25 @@
       "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\services\\menuuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\services\\menuprinterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\interfaces\\igestortareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\services\\gestoropciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\services\\menuprinterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\models\\listatareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\interfaces\\igestortareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\services\\gestortareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\utils\\stringutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\interfaces\\imenuuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A29D6B2-B538-46D6-B43E-6EC8243544F1}|..\\GestorDeTareas\\GestorDeTareas.csproj|c:\\users\\profvespertino\\desktop\\damv2_2024\\gestordetareas\\interfaces\\imenuprinterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -86,43 +83,56 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IGestorOpciones.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Interfaces\\IGestorOpciones.cs",
+              "RelativeDocumentMoniker": "..\\GestorDeTareas\\Interfaces\\IGestorOpciones.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Interfaces\\IGestorOpciones.cs",
+              "RelativeToolTip": "..\\GestorDeTareas\\Interfaces\\IGestorOpciones.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA3wBkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T19:14:02.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FileUtils.cs",
+              "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Utils\\FileUtils.cs",
+              "RelativeDocumentMoniker": "..\\GestorDeTareas\\Utils\\FileUtils.cs",
+              "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Utils\\FileUtils.cs",
+              "RelativeToolTip": "..\\GestorDeTareas\\Utils\\FileUtils.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwB0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T19:05:19.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "StringUtils.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Utils\\StringUtils.cs",
               "RelativeDocumentMoniker": "..\\GestorDeTareas\\Utils\\StringUtils.cs",
               "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Utils\\StringUtils.cs",
               "RelativeToolTip": "..\\GestorDeTareas\\Utils\\StringUtils.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAjwAoAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T15:28:46.453Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GestorDeTareas",
-              "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\GestorDeTareas.csproj",
-              "RelativeDocumentMoniker": "..\\GestorDeTareas\\GestorDeTareas.csproj",
-              "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\GestorDeTareas.csproj",
-              "RelativeToolTip": "..\\GestorDeTareas\\GestorDeTareas.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-09T15:28:27.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MenuPrinterService.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Services\\MenuPrinterService.cs",
               "RelativeDocumentMoniker": "..\\GestorDeTareas\\Services\\MenuPrinterService.cs",
               "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Services\\MenuPrinterService.cs",
               "RelativeToolTip": "..\\GestorDeTareas\\Services\\MenuPrinterService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAArwAoAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T15:09:10.814Z",
               "EditorCaption": ""
@@ -135,53 +145,39 @@
               "RelativeDocumentMoniker": "..\\GestorDeTareas\\Services\\MenuUserService.cs",
               "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Services\\MenuUserService.cs",
               "RelativeToolTip": "..\\GestorDeTareas\\Services\\MenuUserService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAzwCsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T15:05:56.361Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GestorTareas.cs",
-              "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Services\\GestorTareas.cs",
-              "RelativeDocumentMoniker": "..\\GestorDeTareas\\Services\\GestorTareas.cs",
-              "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Services\\GestorTareas.cs",
-              "RelativeToolTip": "..\\GestorDeTareas\\Services\\GestorTareas.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:43:12.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "IMenuUserService.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Interfaces\\IMenuUserService.cs",
               "RelativeDocumentMoniker": "..\\GestorDeTareas\\Interfaces\\IMenuUserService.cs",
               "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Interfaces\\IMenuUserService.cs",
               "RelativeToolTip": "..\\GestorDeTareas\\Interfaces\\IMenuUserService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAewAkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:28:57.053Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:28:57.053Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "ListaTareas.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Models\\ListaTareas.cs",
               "RelativeDocumentMoniker": "..\\GestorDeTareas\\Models\\ListaTareas.cs",
               "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Models\\ListaTareas.cs",
               "RelativeToolTip": "..\\GestorDeTareas\\Models\\ListaTareas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAvwDYAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T14:09:16.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Tarea.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Models\\Tarea.cs",
               "RelativeDocumentMoniker": "..\\GestorDeTareas\\Models\\Tarea.cs",
@@ -189,64 +185,50 @@
               "RelativeToolTip": "..\\GestorDeTareas\\Models\\Tarea.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:09:11.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:09:11.304Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Program.cs",
               "RelativeDocumentMoniker": "..\\GestorDeTareas\\Program.cs",
               "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Program.cs",
               "RelativeToolTip": "..\\GestorDeTareas\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCEAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwAoAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T14:07:38.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IGestorOpciones.cs",
-              "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Interfaces\\IGestorOpciones.cs",
-              "RelativeDocumentMoniker": "..\\GestorDeTareas\\Interfaces\\IGestorOpciones.cs",
-              "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Interfaces\\IGestorOpciones.cs",
-              "RelativeToolTip": "..\\GestorDeTareas\\Interfaces\\IGestorOpciones.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAtwBgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:36:35.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "GestorOpciones.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Services\\GestorOpciones.cs",
               "RelativeDocumentMoniker": "..\\GestorDeTareas\\Services\\GestorOpciones.cs",
               "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Services\\GestorOpciones.cs",
               "RelativeToolTip": "..\\GestorDeTareas\\Services\\GestorOpciones.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAWwBMAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAawCoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T14:41:14.507Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "IGestorTareas.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Interfaces\\IGestorTareas.cs",
               "RelativeDocumentMoniker": "..\\GestorDeTareas\\Interfaces\\IGestorTareas.cs",
               "ToolTip": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Interfaces\\IGestorTareas.cs",
               "RelativeToolTip": "..\\GestorDeTareas\\Interfaces\\IGestorTareas.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAjwAsAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T14:58:17.925Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "IMenuPrinterService.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\GestorDeTareas\\Interfaces\\IMenuPrinterService.cs",
               "RelativeDocumentMoniker": "..\\GestorDeTareas\\Interfaces\\IMenuPrinterService.cs",
@@ -254,12 +236,11 @@
               "RelativeToolTip": "..\\GestorDeTareas\\Interfaces\\IMenuPrinterService.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAWwAwAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:27:09.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:27:09.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "EjercicioTriangulo.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\EjercicioTriangulo.cs",
               "RelativeDocumentMoniker": "EjercicioTriangulo.cs",
@@ -267,12 +248,11 @@
               "RelativeToolTip": "EjercicioTriangulo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:30:31.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:30:31.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "EjercicioPrimo.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\EjercicioPrimo.cs",
               "RelativeDocumentMoniker": "EjercicioPrimo.cs",
@@ -280,12 +260,11 @@
               "RelativeToolTip": "EjercicioPrimo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T14:31:06.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T14:31:06.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "LibrarySingleton.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\Models\\LibrarySingleton.cs",
               "RelativeDocumentMoniker": "Models\\LibrarySingleton.cs",
@@ -293,12 +272,11 @@
               "RelativeToolTip": "Models\\LibrarySingleton.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwCQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T19:12:00.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T19:12:00.641Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "EjercicioSingleton.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\EjercicioSingleton.cs",
               "RelativeDocumentMoniker": "EjercicioSingleton.cs",
@@ -306,12 +284,11 @@
               "RelativeToolTip": "EjercicioSingleton.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAqwA0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T19:03:57.643Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-08T19:03:57.643Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\Models\\Book.cs",
               "RelativeDocumentMoniker": "Models\\Book.cs",
@@ -323,7 +300,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "EjercicioTres.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\EjercicioTres.cs",
               "RelativeDocumentMoniker": "EjercicioTres.cs",
@@ -335,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\PrimeritaConsola\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -343,12 +320,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T14:57:28.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-07T14:57:28.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\WpfFirstAPP\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "..\\WpfFirstAPP\\MainWindow.xaml.cs",
@@ -360,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\WpfFirstAPP\\App.xaml",
               "RelativeDocumentMoniker": "..\\WpfFirstAPP\\App.xaml",
@@ -371,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ProfVespertino\\Desktop\\damv2_2024\\WpfFirstAPP\\MainWindow.xaml",
               "RelativeDocumentMoniker": "..\\WpfFirstAPP\\MainWindow.xaml",

@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfFirstAPP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFirstAPP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Nombre&#xD;&#xA;" HorizontalAlignment="Left" Margin="82,102,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="220,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Click me" HorizontalAlignment="Left" Margin="551,113,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
