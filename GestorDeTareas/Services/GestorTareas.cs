@@ -20,17 +20,22 @@ namespace GestorDeTareas.Services
 
         public bool Remove(Tarea tarea)
         {
-            throw new NotImplementedException();
+            return ListaTareas.GetInstance().Remove(tarea);
         }
 
         public List<Tarea> GetAll()
         {
-            throw new NotImplementedException();
+           return ListaTareas.GetInstance().GetAll();
         }
 
         public Tarea? Get(Guid guid)
         {
             return ListaTareas.GetInstance().Get(guid);
+        }
+
+        public void Set(List<Tarea> tareas)
+        {
+            ListaTareas.GetInstance().Set(tareas);
         }
     }
 }

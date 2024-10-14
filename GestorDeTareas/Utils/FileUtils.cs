@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GestorDeTareas.Interfaces;
+using GestorDeTareas.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,11 +16,14 @@ namespace GestorDeTareas.Utils
             try
             {
                 string listaSerializada = JsonSerializer.Serialize(obj);
-                await File.WriteAllTextAsync(path, listaSerializada);
+                DateTime fechaActual= DateTime.Now;
+
+                await File.WriteAllTextAsync($"{fechaActual:yyyyMMdd}_Download{path}", listaSerializada);
                 return true;
             }
             catch (Exception ex)
             {
+                LogService.WriteLog(ex);
                 return false;
             }
         }
@@ -32,7 +37,7 @@ namespace GestorDeTareas.Utils
                 }
                 catch (Exception ex)
                 {
-
+                    LogService.WriteLog(ex);
                 }
                 return default(T);
             }

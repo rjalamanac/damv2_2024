@@ -5,7 +5,7 @@ namespace GestorDeTareas
 {
     public class Program
     {
-        public static async void Main()
+        public  static void Main()
         {
             IMenuPrinterService menuPrinterService = new MenuPrinterService();
             IMenuUserService userService = new MenuUserService();
@@ -37,7 +37,7 @@ namespace GestorDeTareas
                     gestorOpciones.CompletarTarea(userService.ObtenerIdtarea());
                     break;
                 case 6:
-                    await gestorOpciones.GuardarTareasEnArchivo();
+                    gestorOpciones.GuardarTareasEnArchivo();
                     break;
             }
 
@@ -46,4 +46,3 @@ namespace GestorDeTareas
     }
 
 }
-

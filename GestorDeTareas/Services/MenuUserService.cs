@@ -41,6 +41,10 @@ namespace GestorDeTareas.Services
                 Console.WriteLine("Dame el id de la tarea");
                 string id = Console.ReadLine() ?? string.Empty;
                 datoCorrecto=Guid.TryParse(id, out result);
+                if (!datoCorrecto)
+                {
+                    LogService.WriteLog($"El usuario ha escrito un id incorrecto: {id}");
+                }
             }while(!datoCorrecto);
             
             return result;
@@ -51,6 +55,7 @@ namespace GestorDeTareas.Services
             int val= StringUtils.ConvertToNumber(Console.ReadLine() ?? string.Empty) ?? 0;
             if (val<1 || val>8)
             {
+                LogService.WriteLog($"El usuario ha elegido una opcion incorrecta: {val}");
                 return null;
             }
             return val;

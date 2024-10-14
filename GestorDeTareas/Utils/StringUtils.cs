@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GestorDeTareas.Utils
 {
-    internal class StringUtils
+    public class StringUtils
     {
         public static int? ConvertToNumber(string str)
         {
