@@ -1,0 +1,132 @@
+﻿<Window x:Class="WPF_FirstAPP.Calculadora"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_FirstAPP"
+        mc:Ignorable="d"
+        Title="Calculadora" Height="450" Width="800">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="7" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="20" Padding="10" />
+
+        <Button Grid.Row="2" Grid.Column="0" >
+            <Viewbox>
+                <TextBlock Text="1"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="2" Grid.Column="2" >
+            <Viewbox>
+                <TextBlock Text="2"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="2" Grid.Column="4" >
+            <Viewbox>
+                <TextBlock Text="3"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="2" Grid.Column="6" >
+            <Viewbox>
+                <TextBlock Text="+"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="4" Grid.Column="0" >
+            <Viewbox>
+                <TextBlock Text="4"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="4" Grid.Column="2" >
+            <Viewbox>
+                <TextBlock Text="5"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="4" Grid.Column="4" >
+            <Viewbox>
+                <TextBlock Text="6"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="4" Grid.Column="6" >
+            <Viewbox>
+                <TextBlock Text="-"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="6" Grid.Column="0" >
+            <Viewbox>
+                <TextBlock Text="7"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="6" Grid.Column="2" >
+            <Viewbox>
+                <TextBlock Text="8"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="6" Grid.Column="4" >
+            <Viewbox>
+                <TextBlock Text="9"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="6" Grid.Column="6" >
+            <Viewbox>
+                <TextBlock Text="x"/>
+            </Viewbox>
+        </Button>
+
+
+        <Button Grid.Row="8" Grid.Column="0" >
+            <Viewbox>
+                <TextBlock Text="0"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="8" Grid.Column="2" >
+            <Viewbox>
+                <TextBlock Text="&#960;"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="8" Grid.Column="4" >
+            <Viewbox>
+                <TextBlock Text="&#247;"/>
+            </Viewbox>
+        </Button>
+
+        <Button Grid.Row="8" Grid.Column="6" >
+            <Viewbox>
+                <TextBlock Text="Resultado"/>
+            </Viewbox>
+        </Button>
+    </Grid>
+</Window>
