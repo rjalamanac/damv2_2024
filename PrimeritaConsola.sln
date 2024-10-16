@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeritaConsola", "PrimeritaConsola.csproj", "{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeritaConsola", "PrimeritaConsola\PrimeritaConsola.csproj", "{70E5BE97-21B5-4BB1-ADCB-CC7769A24EA6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorDeTareas", "..\GestorDeTareas\GestorDeTareas.csproj", "{5A29D6B2-B538-46D6-B43E-6EC8243544F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GestorDeTareas", "GestorDeTareas\GestorDeTareas.csproj", "{5A29D6B2-B538-46D6-B43E-6EC8243544F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_FirstAPP", "..\WPF_FirstAPP\WPF_FirstAPP.csproj", "{F96862AD-6DA3-4D6A-A59B-B8682A630740}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_FirstAPP", "WPF_FirstAPP\WPF_FirstAPP.csproj", "{F96862AD-6DA3-4D6A-A59B-B8682A630740}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
