@@ -1,6 +1,8 @@
-﻿using System;
+﻿using GestorDeTareas.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -22,6 +24,24 @@ namespace WPF_FirstAPP
         public Calculadora()
         {
             InitializeComponent();
+            foreach (var child in GridCalculadora.Children)
+            {
+                if (child is Button button)
+                {
+                    button.Click += Btn_Click;
+                }
+            }
+        }
+
+        private void Btn_Click(object sender, RoutedEventArgs e)
+        {
+            
+            if (sender is Button button)
+            {
+                var buttonSymbol = button.Name.Split("_").Last();
+                Txt_Calculadora.Text += buttonSymbol;
+            }
+
         }
     }
 }
