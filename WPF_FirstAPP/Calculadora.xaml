@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_FirstAPP"
         mc:Ignorable="d"
-        Title="Calculadora" Height="450" Width="800">
-    <Grid Margin="20">
+        Title="Calculadora" Height="450" Width="800"  MinHeight="400" MinWidth="400">
+    <Grid Margin="20" x:Name="GridCalculadora">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="10"/>
@@ -30,100 +30,100 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="7" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="20" Padding="10" />
+        <TextBox x:Name="Txt_Calculadora" IsEnabled="false" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="7" VerticalAlignment="Center" HorizontalAlignment="Stretch" FontSize="20" Padding="10" />
 
-        <Button Grid.Row="2" Grid.Column="0" >
+        <Button x:Name="Btn_1" Grid.Row="2" Grid.Column="0" >
             <Viewbox>
                 <TextBlock Text="1"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="2" Grid.Column="2" >
+        <Button x:Name="Btn_2" Grid.Row="2" Grid.Column="2" >
             <Viewbox>
                 <TextBlock Text="2"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="2" Grid.Column="4" >
+        <Button x:Name="Btn_3" Grid.Row="2" Grid.Column="4" >
             <Viewbox>
                 <TextBlock Text="3"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="2" Grid.Column="6" >
+        <Button x:Name="Btn_Mas" Grid.Row="2" Grid.Column="6" >
             <Viewbox>
                 <TextBlock Text="+"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="4" Grid.Column="0" >
+        <Button x:Name="Btn_4" Grid.Row="4" Grid.Column="0" >
             <Viewbox>
                 <TextBlock Text="4"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="4" Grid.Column="2" >
+        <Button x:Name="Btn_5" Grid.Row="4" Grid.Column="2" >
             <Viewbox>
                 <TextBlock Text="5"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="4" Grid.Column="4" >
+        <Button  x:Name="Btn_6" Grid.Row="4" Grid.Column="4" >
             <Viewbox>
                 <TextBlock Text="6"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="4" Grid.Column="6" >
+        <Button  x:Name="Btn_Menos" Grid.Row="4" Grid.Column="6" >
             <Viewbox>
                 <TextBlock Text="-"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="6" Grid.Column="0" >
+        <Button x:Name="Btn_7" Grid.Row="6" Grid.Column="0" >
             <Viewbox>
                 <TextBlock Text="7"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="6" Grid.Column="2" >
+        <Button x:Name="Btn_8" Grid.Row="6" Grid.Column="2" >
             <Viewbox>
                 <TextBlock Text="8"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="6" Grid.Column="4" >
+        <Button x:Name="Btn_9" Grid.Row="6" Grid.Column="4" >
             <Viewbox>
                 <TextBlock Text="9"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="6" Grid.Column="6" >
+        <Button x:Name="Btn_Por" Grid.Row="6" Grid.Column="6" >
             <Viewbox>
                 <TextBlock Text="x"/>
             </Viewbox>
         </Button>
 
 
-        <Button Grid.Row="8" Grid.Column="0" >
+        <Button x:Name="Btn_0" Grid.Row="8" Grid.Column="0" >
             <Viewbox>
                 <TextBlock Text="0"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="8" Grid.Column="2" >
+        <Button x:Name="Btn_Pi" Grid.Row="8" Grid.Column="2" >
             <Viewbox>
                 <TextBlock Text="&#960;"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="8" Grid.Column="4" >
+        <Button x:Name="Btn_Div" Grid.Row="8" Grid.Column="4" >
             <Viewbox>
                 <TextBlock Text="&#247;"/>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="8" Grid.Column="6" >
+        <Button x:Name="Btn_Result" Grid.Row="8" Grid.Column="6" >
             <Viewbox>
                 <TextBlock Text="Resultado"/>
             </Viewbox>
