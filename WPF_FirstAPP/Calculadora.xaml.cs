@@ -44,8 +44,6 @@ namespace WPF_FirstAPP
                 button.Content is Viewbox view &&
                 view.Child is TextBlock block)
             {
-                
-
                 switch (block.Text)
                 {
                     case Constants.Mas:
@@ -71,7 +69,8 @@ namespace WPF_FirstAPP
                     case Constants.Pi:
                         if (string.IsNullOrEmpty(Txt_Calculadora.Text) || 
                                 (!string.IsNullOrEmpty(operador) && 
-                                !int.TryParse(Txt_Calculadora.Text.LastOrDefault().ToString(), out int valor)
+                                (int.TryParse(Txt_Calculadora.Text.LastOrDefault().ToString(), out int valor) || 
+                                Txt_Calculadora.Text.LastOrDefault().ToString() != Constants.Pi)
                                 ))
                         {
                             Txt_Calculadora.Text += block.Text;
@@ -101,29 +100,32 @@ namespace WPF_FirstAPP
 
         private string GenerarResultado(string resultado)
         {
-            if (string.IsNullOrEmpty(Txt_Calculadora.Text) ||
-                                        string.IsNullOrEmpty(operador) ||
-                                        (Txt_Calculadora.Text.LastOrDefault().ToString() == Constants.Pi) ||
-                                        !int.TryParse(Txt_Calculadora.Text.LastOrDefault().ToString(), out int valor)
-                                        )
+            if (string.IsNullOrEmpty(Txt_Calculadora.Text) ||string.IsNullOrEmpty(operador))
             {
                 return string.Empty;
             }
+
+            if (!(Txt_Calculadora.Text.LastOrDefault().ToString() == Constants.Pi) &&
+                                        !int.TryParse(Txt_Calculadora.Text.LastOrDefault().ToString(), out int valor))
+            {
+                return string.Empty;
+            }
+
             string[] digitosOperacion = Txt_Calculadora.Text.Split(operador);
             decimal primerValor = GetDecimalValueFromString(digitosOperacion[0]);
-            decimal segundoValor = GetDecimalValueFromString(digitosOperacion[2]);
+            decimal segundoValor = GetDecimalValueFromString(digitosOperacion[1]);
 
             switch (operador)
             {
                 case Constants.Mas:
                     operador = null;
-                    return (primerValor + segundoValor).ToString();
+                    return (decimal.Round(primerValor + segundoValor,4)).ToString();
                 case Constants.Menos:
                     operador = null;
                     return (primerValor - segundoValor).ToString();
                 case Constants.Division:
                     operador = null;
-                    return segundoValor == decimal.Zero ? string.Empty : (primerValor / segundoValor).ToString();
+                    return segundoValor == decimal.Zero ? decimal.Zero.ToString() : (primerValor / segundoValor).ToString();
                 case Constants.Por:
                     operador = null;
                     return (primerValor * segundoValor).ToString();
