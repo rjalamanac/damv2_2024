@@ -1,0 +1,59 @@
+﻿<Window x:Class="CambioDivisa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CambioDivisa" 
+        xmlns:view="clr-namespace:CambioDivisa.View"
+        xmlns:controls="clr-namespace:CambioDivisa.Controls"
+        xmlns:viewModel="clr-namespace:CambioDivisa.ViewModel"
+        mc:Ignorable="d"        
+        Title="Cambio de divisas" Height="450" Width="800"
+        d:DataContext="{d:DesignInstance Type=viewModel:MainViewModel}"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewModel:CambioDivisaViewModel}">
+            <view:CambioDivisaView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:HistoricoCambioDivisaViewModel}">
+            <view:HistoricoCambioDivisaView/>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="100" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <!-- Status Bar 3-->
+        </Grid.RowDefinitions>
+
+        <!-- Menu Bar 0-->
+        <Menu FontSize="15" Grid.Row="0">
+            <MenuItem Header="_Select View">
+                <MenuItem Header="_CambioDivisa"
+                          Command="{Binding SelectViewModelCommand}"
+                          CommandParameter="{Binding CambioDivisaViewModel}"/>
+                <MenuItem Header="_Historico"
+                          Command="{Binding SelectViewModelCommand}"
+                          CommandParameter="{Binding HistoricoCambioDivisaViewModel}"/>
+            </MenuItem>
+            <MenuItem Header="_Exit">
+                <MenuItem Header="_Close Application" 
+                          Command="{Binding ExitApplicationCommand}"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Header 1-->
+        <controls:HeaderControl Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+        <!-- Players and Stats Views 2-->
+        <ContentControl Grid.Row="2" Content="{Binding SelectedViewModel}"/>
+
+        <!-- Status Bar 3-->
+        <StatusBar Grid.Row="3">
+            <StatusBarItem FontSize="20" Content=" (c) WPF MVVM Project v1.0" HorizontalAlignment="Right" Margin="0 0 6 0"/>
+        </StatusBar>
+    </Grid>
+</Window>

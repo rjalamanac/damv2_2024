@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="CambioDivisa.View.HistoricoCambioDivisaView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Background="white"
+        d:DesignHeight="300" d:DesignWidth="300"
+        xmlns:local="clr-namespace:CambioDivisa.View" xmlns:viewmodel="clr-namespace:CambioDivisa.ViewModel" d:DataContext="{d:DesignInstance Type=viewmodel:HistoricoCambioDivisaViewModel}"
+             mc:Ignorable="d">
+    <Grid>
+        <ListBox ItemsSource="{Binding Historico}" 
+                 HorizontalContentAlignment="Stretch" 
+                 VerticalContentAlignment="Top">
+        </ListBox>
+    </Grid>
+</UserControl>

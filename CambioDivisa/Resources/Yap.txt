@@ -1,0 +1,372 @@
+MC - Officer Psyker 	
+[~alternatives]		
+HW - Voidborn [~Hive World, Imperial World]			
+O - Sancioned Psyker - Santic			
+T - Coercion [~Persuasion]     DH - Logic			
+AT - Officer			
+Cha - Fel +2, WP +2, ~Tgh +1, ~Agi +1			
+			
+2: Coe [~Any convo Per/Com]			
+3: 			
+4: Seize the Initiative			
+5: Fel, Jinx [~Psalms of Heroes(bugged atm) or another HW talent			
+6: More than Possible [~Focus, Steel Resolve], Fel			
+7: Shield of the Emperor [~Air of Authority], Still Mind			
+8: Personal Oversight [Steel Reslove], Coe			
+9: Upgrade 4			
+10: Comm [~fill party need], WP			
+11: Psy Rating 1, WP			
+12: Biomancy, It Will Not Die			
+13: Steel Resolve, Com			
+14: Tgh [~BS], Psychic Barrage			
+15: Upgrade 1			
+16: Master Tactician [~Vanguard]			
+17: Fervour [~Enfeeble]			
+18: In the Hero's Footseps			
+19:			
+20: Fel			
+21: Fel, Nerves of Steel [~Psy Rating 2]			
+22: Enfeeble [~Linchpin, Inspire (bugged atm)]			
+23: Hidden Advantage [~Joint Offensive, Personal Involvement], Coe 			
+24: WP, Psy Rating 2			
+25: Personal Involvement			
+26: Coe, WP			
+27: ~take anything like up 1 due to not using this ability ever			
+28: Joint Offensive			
+29: Com, Tgh			
+30: Psy Rating 3, Hammer of the Emperor			
+31: Against All Odds [lol <3 jk bro forgotted, can take earlier over like Hidden Advnatage]			
+32: Tgh, Com			
+33: Heroic Inspiration			
+34: Tgh, Second Sight			
+35: ~Up2			
+36: Eager for Battle [~Cataclysm], Leader's Assault [~Heroism] 			
+37: Coe, Brink of Death [~Sanguine Siphon]			
+38: Fel, Sanguine Siphon [~CT - Fel]			
+39: Light of the Emperor, Coe			
+40: Cataclysm [~Tough as Steel], Psy Rating 4
+
+
+Abelard Tank		[~options]
+Chara: Tgh, WS, Str		
+Skills: Ath, Car, Med, ~Lore (Imp)		
+		
+2: Ath		
+3: 		
+4: Thick Skin		
+5: Defensive Stance, Tgh		
+6: Sworn Enemy [~Taunting Scream(bugged?)], Ath		
+7: Tgh, Get Into Cover [~Combat Master]		
+8: Car, Clenched Teeth		
+9: Up 3		
+10: Hardened Scars, WS		
+11: Taunting Scream, It Will Not Die		
+12: WS, Car		
+13: Ramming Speed [~Invigorating Hatred], Med		
+14: Str, Heavy Armour Prof		
+15: Up 2		
+
+16: Vanguard [~Arch Militant]
+17: Wall of Rockcrete, Combat Master [@Dragonology99~Do Not Falter!]
+18: Enduring Shield (bugged?)
+19:
+20: Tgh
+21: Tgh, Resilient Beacon
+22: Defensive Stance, Ath
+23: Centre of Attention, Dueling Mastery
+24: WS, CT - Tgh
+25: Taunting Defence
+26: Ath, WS
+27: Up 3 [~1]
+28: Renitent Beacon
+29: LI [~Car], Str
+30: Bulwark [~Follow My Lead]
+31: Selfless Resilience
+32: Str, L
+33: Protective Ward
+34: Know no Heresy [~any CT, any background feat, Doing My Part (bugged?)]
+35: Up 1
+
+36: Steel Shell, Impetus [~Invigorating Hatred]
+37: Ath [~LI], Beacon of Might
+38: Tgh, Stronger Together
+39: Reckless Strike, Ath [~LI]
+40: Full Attention, Wall of Ferrocrete
+41: Tgh, Rigorous Training [~Invigorating Hatred, Interception]
+42: Follow My Lead [~Forced Distraction], WS
+43: ~Defensive Comrade, CT - WS [~any skill, background, chara, Power Armour Prof]
+44: LI, Peak Condition [~Unbreakable Will]
+
+Idira Psyker God		[~options]
+Primary Chara: WP, Per		Secondary: Int [~BS]
+Primary Skills: [~party fill] LI, LX		Secondary: 
+		
+ 4: Uncanny Sight		
+ 5: WP, Second Sight		
+ 6: Tide of Excellence, WP		
+ 7: Sensory Deprivation, LI [~Awa, party fill]		
+ 8: Fresh Target, Psychic Barrage		
+ 9: ~(2), LI		
+10:  LX, Per		
+11: Ballistics Calculation, LX		
+12: Prescience [~Forboding], Psy Rating 1		
+13: Passive Learning [~Weak Body Weak Soul, Sharpshooter, Inflict Dispair], Per		
+14: Int [~BS], It Will Not Die [~any spell talent]		
+15: ~(1/3)		
+
+16: Bounty Hunter [~all work]
+17: Forboding
+18: Savour the Kill
+19: 
+20: WP, Psy Rating 2
+21: WP, Pain Channeling
+22: Psychic Assault
+23: Thriving in Peril, LI
+24: Per, Mind Theif
+25: Mind Siege
+26: LI, Per
+27: ~
+28: Advice and Guidance
+29: LX, Int
+30: Psy Rating 3, Biomancy [~Prophetic Intervention. santic/pyro]
+31: Strange Vitality [~Sanguine Siphon]
+32: Int, LX
+33: Hunting Surge [~Inspiring Trophy, Share the Spoils]
+34: Sanguine Siphon
+35: ~(2)
+
+36: Malign Influence, Sharpshooter
+37: LI, Deterioration
+38: WP, Warp Minds [~Stronger Together]
+39: Enfeeble, LI
+40: Extermination, Adrenaline Surge
+41: WP, Psy Rating 4
+42: Invigorate [~Regeneration, Warp Speed (or progress other psy type)], Per
+43: Inspiring Trophy, CT - WP
+44: LX, Cataclysm [~Deathdealer]
+
+Argenta - Soldier - Arch-Militant - Ranged Burst DPS             [~options]
+Characteristics: Ballistic Skill, Agility, Perception		
+Skills: Demolition, Awareness	
+			
+  4: Camaraderie		
+  5: Ballistic Skill, Muzzle Velocity	
+  6: Ballistic Skill, Rapid Fire	
+  7: Agility, Doing My Part	
+  8: Fired Up, Demolition		
+  9: Firearm Mastery Upgrade 2		
+10: Unpredictable, Agiility	
+11: Concentrated Fire, Awareness	
+12: Strength, Ready to Serve		
+13: Unfaltering Fire, Bolt Weapon Expert
+14: Heavy Weapon Proficiency, Awareness	
+15: Firearm Mastery Upgrade 4
+
+16: Arch-Militant
+17: Wildfire
+18: Heavy Gunner
+19: Steady Superiority, AP Increase
+20: Ballistic Skill
+21: Always Ready, Ballistic Skill
+22: Reckless Rush, Overpower
+23: Demolition, Discipline
+24: Agility, Breaking Point
+25: Critical Versatility
+26: Demolition, Agility
+27: Steady Superiority Upgrade 4
+28: Demolition, Adaptability
+29: Perception, Litany of Hatred
+30: Kick
+31: All Out
+32: Perception, Awareness
+33: Accustomed to Glory, Perception
+34: Perception, CT Ballistic Skill
+35: Steady Superiority Upgrade (1-3 doesn't matter)
+
+36: Extermination, Integrity
+37: Demolition, Flashfire
+38: Ballistic Skill, CT Agility
+39: Dash, Demolition
+40: Cataclysm, Exploit Weakness
+41: Ballistic Skill, Point-Blank
+42: Devastating Attack, Agility
+43: Broad Expertise, It Will Not Die
+44: Awareness, Deadly Aim
+
+Act 1 Gear:
+     - Longlas
+     - Modified Bolter (Burst Weapon)
+     - (Retobi-Pattern) Lasgun (Burst Weapon)
+     - Consumables use Medikit
+
+Act 2 Gear:
+     - Heavy Bolter (buy it from Drusians faction)
+     - Calibrated Heavy Stubber
+     - Recoil Gloves
+     - Cameleoline Cloak
+     - Portative Manipulator
+     - Invigorating Resolve
+
+Acts 3 & 4 Gear:
+     - Improved Heavy Bolter (75 Strength Requirement)
+     - Sororitas Power Armour
+     - White Signet of the Inquisition (found at end of Act 2)
+     - Stabiliser Bracers
+     - Tempestus Carapace Elite Backpack
+     - Blitz Boots
+	 
+	 
+Cassia - Officer - Grand Strategist - Navigator - Off-Tank
+Characteristics: Willpower, Perception
+Secondary: Intelligence
+Skills: Lore (Warp), Awareness
+
+  5: Willpower, Mastery of Time
+  6: Seize the Initiative, Willpower
+  7: Waking Nightmare, Eye of Oblivion
+  8: Ebb and Flow, Lore (Warp)
+  9: Finest Hour! Upgrade 4
+10: Lore (Warp), Perception
+11: Undam the Sea of Souls, Perception
+12: Zone of Fear, Perilous Ways
+13: Blood Augury, Awareness
+14: Fellowship, Mind Over Matter
+15: Finest Hour! Upgrade 1
+
+16: Grand Strategist
+17: Point of Curiosity
+18: Strange Vitality
+19: Take and Hold
+20: AP Increase, Willpower
+21: Pass Unscathed, Willpower
+22: Reveal the Light
+23: Lore (Warp), Tonicity
+24: Perception, Open to the Warp
+25: The Course Untravelled 
+26: Perception, Lore (Warp)
+27: Take and Hold Upgrade 4
+28: Unnatural Allure, Intelligence
+29: Intelligence, Awareness
+30: Notch of Purpose
+31: CT Willpower,  CT Perception
+32: Awareness, Intelligence
+33: Intelligence, Strategic Offensive
+34: It Will Not Die
+35: Take and Hold Upgrade 1
+
+36: Malign Influence, Steel Resolve
+37: Lore (Warp), Point of Interest
+38: Willpower, Stable Routes
+39: Warp Curse Unleashed, Lore (Warp)
+40: Eager for Battle, Personal Zone
+
+Act 1 Gear:
+     - Staff of House Orsellio (Castigating)
+     - Staff of Orsellio Guardian (Infusing) for buffing allies
+     - Emergency Injector
+     - Thrice-Pioneer's Bracers
+     - Warmonger Boots
+     - Helmet of the Devoted Protector
+     - Carapace Chestplate (or any armour that doesn't reduce her Dodge)
+     - Consumables use Stimm
+   
+Act 2 Gear:
+     - Aquila Pendant 
+     - Auspex
+     - Expeditionary Footwear
+
+
+Pasqal Plasma Lord Grand Strategist		
+[~options]
+Primary Chara: Int, BS		             Secondary: Per
+Primary Skills, Tech-Use, Logic	     Secondary: Lore (Xenos) [~party fill]
+5: Int, Advanced Skill: TU		
+6: Uncanny Sight, Int		
+7: Joint Analysis, TU		
+8: Filtering Protocols [~weak body weak soul], Pinnacle of Weaponry [~Calculated Relations]		
+9: ~Up 2, Logic		
+10: Logic, BS		
+11: Aiming Protocls, LX		
+12: Tactical Knowledge, It Will Not Die		
+13: Tide of Excellence [~Overcharge Protocols (bugged)], BS		
+14: Per, Plasma Weapon Exp		
+15: ~Up 1		
+16: Grand Strategist		
+17: Combat Locus Stratagem		
+18: Diversion Zone, 		
+19:		
+20: Int		
+21: Improvised Strategy, Int		
+22: Stronghold Stratagem [~Killzone]		
+23: TU, Sniping Zone		
+24: BS, CT - Int [~Persistance of the Forge, Grenadier] 		
+25: Strategic Offensive		
+26: BS, TU		
+27: ~Up 1		
+28: Blurred Locus, Per		
+29: Per, TU		
+30: Killzone Strategem		
+31: Personal Zone, Basic Skill Logic [~CT Per] 		
+32: Logic, Per		
+33: ~WS, Point of Interest		
+34: Adance Skill Logic		
+35: ~Up 4		
+36: Extermination, Improved Tactics		
+37: TU, Machine Spirit Scan Protocols		
+38: Int, Base Skill LX [~CT Per/BS]		
+39: Perfect Spot, TU		
+40: Cataclysm, Overcharge Protocols (bugged)
+
+Heinrix 	 
+MC Officer Support		[~alternatives]	
+
+HW - Voidborn [~Hive World, Imperial World, Minisotrum Priest]			
+O - Noble [~Commissar, Santic Psyker - Biomancer/Santic/Diviner]			
+T - ~Per      DH - ~LW			
+AT - Officer			
+Fel +2, Agi +2, ~Tgh/BS +2		
+	
+Chara	Fel, Agi, Tgh, BS [~WP]		
+Skills	Per, Coe		
+			
+2: Per			
+3: 			
+4: Seize the Initiative			
+5: Fel, You Do Something			
+6: Focus, Fel			
+7: Air of Authority, CT - Fel [~Grenadier]			
+8: Inspiring Speech, Per			
+9: Up 4			
+10: Coe, Tgh			
+11:Personal Oversight, Tgh			
+12: Take Aim, It Will Not Die			
+13: Steel Resolve, Coe			
+14: BS, CT - Agi [~bSkill - Per, Grenadier, any HW/O talent]			
+15: Up 1			
+
+16: Master Tactician
+17: Inspire (bugged) [~Linchpin]
+18: In the Hero's Footsteps
+19:
+20: Fel
+21: Fel, Nerves of Steel
+22: Assign Objective
+23: Hidden Advantage, Per
+24: Agi, bSkill Per
+25: Against All Odds
+26: Per, Agi
+27: ~
+28: Unwavering Motivation [~Reliance]
+29: Coe, Agi
+30: aSkill - Per, Linchpin [~Strongpoint]
+31: Comfort in Conformity [~Primary Objective, Heroic Inspiration]
+32: Agi, Coe
+33: Stand Resolute [~Primary Objective, Heroic Inspiration]
+34: Tgh, bSkill - Coe
+35: ~
+
+36: Eager Subordinates, Steady [~Heroism, Blood of Martyrs]
+37: Per, Primary Objective
+38: Fel, aSkill - Coe [~Nimble]
+39: ~Get Back in the Fight, Per
+40: Firebrand [~Attention, Flagbearer], Heroic Inspiration
