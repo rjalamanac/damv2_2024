@@ -3,14 +3,18 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_FirstAPP"
+        xmlns:local="clr-namespace:WPF_FirstAPP" 
+        xmlns:view="clr-namespace:WPF_FirstAPP.View"
+        xmlns:viewmodel="clr-namespace:WPF_FirstAPP.ViewModel" 
+        d:DataContext="{d:DesignInstance Type=viewmodel:MainViewModel}"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewmodel:NumPrimoViewModel}">
+            <view:NumPrimoView/>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        <Label x:Name="LabelFirstWPF" Content="Escriba un numero" HorizontalAlignment="Left" Margin="30,136,0,0" VerticalAlignment="Top" Height="60" Width="199"/>
-        <TextBox x:Name="txtBoxWPF" HorizontalAlignment="Left" Margin="262,142,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="182" Height="48"/>
-        <Button x:Name="ClickMeButton" Content="Click Me Pls" HorizontalAlignment="Left" Margin="474,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="82" Width="141" Click="Button_Click">
-        </Button>
-
+        <ContentControl Content="{Binding SelectedViewModel}"/>
     </Grid>
 </Window>

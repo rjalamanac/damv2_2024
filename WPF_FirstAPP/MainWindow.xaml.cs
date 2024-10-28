@@ -10,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_FirstAPP.ViewModel;
 
 namespace WPF_FirstAPP
 {
@@ -18,22 +19,21 @@ namespace WPF_FirstAPP
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private readonly MainViewModel _viewModel;
+
+        public MainWindow(MainViewModel viewModel)
         {
             InitializeComponent();
-            txtBoxWPF.Text = string.Empty;
+            _viewModel = viewModel;
+            DataContext = _viewModel;
+            Loaded += MainWindow_Loaded;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        //De Normal no ponemos NUNCA async void, es siempre Task,
+        //es necesario en este caso por respetar la signatura de Loaded
+        private async void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            int? dato=StringUtils.ConvertToNumber(txtBoxWPF.Text);
-            if (!dato.HasValue)
-            {
-                LabelFirstWPF.Content = "Debes escribir un número";
-                return;
-            }
-
-            LabelFirstWPF.Content = Utils.IsNumberPrime(dato.Value) ? "El número es primo" : "El número no es primo";
+            await _viewModel.LoadAsync();
         }
     }
 }

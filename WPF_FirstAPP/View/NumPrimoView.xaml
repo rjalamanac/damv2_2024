@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="WPF_FirstAPP.View.NumPrimoView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_FirstAPP.View"
+        xmlns:viewModel="clr-namespace:WPF_FirstAPP.ViewModel"
+        mc:Ignorable="d"
+        Background="Wheat"
+        d:DataContext="{d:DesignInstance Type=viewModel:NumPrimoViewModel}"
+        Height="450" Width="800">
+    <Grid>
+        <Label x:Name="LabelFirstWPF" Content="{Binding LabelContent,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" 
+               HorizontalAlignment="Left" Margin="30,136,0,0" VerticalAlignment="Top" Height="60" Width="199" Background="White"/>
+        <TextBox x:Name="txtBoxWPF" HorizontalAlignment="Left" Margin="262,142,0,0" TextWrapping="Wrap" 
+                 Text="{Binding TxtBoxWPFText,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="182" Height="48"/>
+        <Button x:Name="ClickMeButton" Command="{Binding Button_ClickCommand}" Content="Click Me Pls" 
+                HorizontalAlignment="Left" Margin="474,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="82" Width="141">
+        </Button>
+    </Grid>
+</UserControl>
