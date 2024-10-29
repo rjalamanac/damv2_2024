@@ -32,10 +32,15 @@ namespace CambioDivisa
         {
             var services = new ServiceCollection();
 
+            //view principal
             services.AddTransient<MainWindow>();
+
+            //view viewModels
             services.AddTransient<MainViewModel>();
             services.AddTransient<CambioDivisaViewModel>();
             services.AddTransient<HistoricoCambioDivisaViewModel>();
+
+            //Services
             services.AddSingleton<ICambioDivisaService, CambioDivisaService>();
             services.AddSingleton<IHistoricoDivisaProvider, HistoricoDivisaService>();
             return services.BuildServiceProvider();

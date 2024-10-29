@@ -7,7 +7,8 @@
         xmlns:viewModel="clr-namespace:CambioDivisa.ViewModel"
         mc:Ignorable="d"
         Background="White"
-        d:DataContext="{d:DesignInstance Type=viewModel:CambioDivisaViewModel}">
+        d:DataContext="{d:DesignInstance Type=viewModel:CambioDivisaViewModel}"
+        d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
         <ComboBox x:Name="comboBoxOrigin" ItemsSource="{Binding Divisas}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,10,0,0" SelectedIndex="{Binding CB_Origin,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
 
