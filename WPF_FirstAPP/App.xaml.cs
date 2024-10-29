@@ -2,6 +2,8 @@
 using System.Configuration;
 using System.Data;
 using System.Windows;
+using WPF_FirstAPP.Interfaces;
+using WPF_FirstAPP.Services;
 using WPF_FirstAPP.ViewModel;
 
 namespace WPF_FirstAPP
@@ -38,7 +40,7 @@ namespace WPF_FirstAPP
             services.AddTransient<NumPrimoViewModel>();
 
             //Services
-
+            services.AddSingleton<IPrimeNumberProvider,PrimeNumberService>();
             return services.BuildServiceProvider();
         }
     }

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using WPF_FirstAPP.Interfaces;
 
 namespace WPF_FirstAPP.ViewModel
 {
@@ -20,9 +21,16 @@ namespace WPF_FirstAPP.ViewModel
         [ObservableProperty]
         public string _LabelContent;
 
+        private IPrimeNumberProvider _numberService;
+
+        public NumPrimoViewModel(IPrimeNumberProvider numberService)
+        {
+            _numberService = numberService;
+        }
+
         public override Task LoadAsync()
         {
-            _LabelContent = "Debes escribir un número";
+            LabelContent = "Debes escribir un número";
             return base.LoadAsync();
         }
 
@@ -36,7 +44,7 @@ namespace WPF_FirstAPP.ViewModel
                 return;
             }
 
-            LabelContent = Utils.IsNumberPrime(dato.Value) ? "El número es primo" : "El número no es primo";
+            LabelContent = _numberService.IsNumberPrime(dato.Value) ? "El número es primo" : "El número no es primo";
         }
     }
 }
