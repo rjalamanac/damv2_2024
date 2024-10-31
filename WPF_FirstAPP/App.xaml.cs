@@ -38,9 +38,10 @@ namespace WPF_FirstAPP
             //view viewModels
             services.AddTransient<MainViewModel>();
             services.AddTransient<NumPrimoViewModel>();
+            services.AddTransient<CalculadoraViewModel>();
 
             //Services
-            services.AddSingleton<IPrimeNumberProvider,PrimeNumberService>();
+            services.AddSingleton<IPrimeNumberProvider, PrimeNumberService>();
             return services.BuildServiceProvider();
         }
     }

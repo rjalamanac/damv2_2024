@@ -12,13 +12,15 @@ namespace WPF_FirstAPP.ViewModel
     {
         private ViewModelBase? _selectedViewModel;
 
-        public MainViewModel(NumPrimoViewModel numPrimoViewModel)
+        public MainViewModel(NumPrimoViewModel numPrimoViewModel, CalculadoraViewModel calculadoraViewModel)
         {
-            _selectedViewModel = numPrimoViewModel;
-            NumPrimoViewModel=numPrimoViewModel;
+            _selectedViewModel = calculadoraViewModel;
+            NumPrimoViewModel = numPrimoViewModel;
+            CalculadoraViewModel = calculadoraViewModel;
         }
 
         public NumPrimoViewModel NumPrimoViewModel { get; }
+        public CalculadoraViewModel CalculadoraViewModel { get; }
 
         public ViewModelBase? SelectedViewModel
         {
