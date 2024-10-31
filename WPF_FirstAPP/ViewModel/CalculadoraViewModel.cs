@@ -69,7 +69,7 @@ namespace WPF_FirstAPP.ViewModel
                     }
                     break;
                 default:
-                    if (Txt_Calculadora?.LastOrDefault()?.ToString() != Constants.Pi)
+                    if (Txt_Calculadora?.LastOrDefault().ToString() != Constants.Pi)
                     {
                         Txt_Calculadora += blockText;
                     }
