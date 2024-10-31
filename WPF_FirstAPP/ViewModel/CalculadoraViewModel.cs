@@ -22,6 +22,7 @@ namespace WPF_FirstAPP.ViewModel
         [ObservableProperty]
         public string? _Txt_Calculadora;
 
+
         public CalculadoraViewModel()
         {
         }
@@ -34,7 +35,7 @@ namespace WPF_FirstAPP.ViewModel
         [RelayCommand]
         public void Btn_Click(object? parameters)
         {
-            string blockText = string.Empty;
+            string blockText = parameters?.ToString() ?? string.Empty;
             switch (blockText)
             {
                 case Constants.Mas:
@@ -68,7 +69,7 @@ namespace WPF_FirstAPP.ViewModel
                     }
                     break;
                 default:
-                    if (Txt_Calculadora.LastOrDefault().ToString() != Constants.Pi)
+                    if (Txt_Calculadora?.LastOrDefault()?.ToString() != Constants.Pi)
                     {
                         Txt_Calculadora += blockText;
                     }

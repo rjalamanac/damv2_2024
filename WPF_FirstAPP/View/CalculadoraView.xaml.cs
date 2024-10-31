@@ -34,9 +34,10 @@ namespace WPF_FirstAPP.View
             InitializeComponent();
             foreach (var child in GridCalculadora.Children)
             {
-                if (child is Button button)
+                if (child is Button button && button.Content is Viewbox view && view.Child is TextBlock block)
                 {
                     button.Command = calculadoraViewModel.Btn_ClickCommand;
+                    button.CommandParameter = block.Text;
                 }
             }
         }
