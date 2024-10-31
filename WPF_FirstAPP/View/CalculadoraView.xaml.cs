@@ -1,4 +1,5 @@
 ﻿using GestorDeTareas.Utils;
+using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,8 +25,11 @@ namespace WPF_FirstAPP.View
     /// </summary>
     public partial class CalculadoraView : UserControl
     {
-        public CalculadoraView(CalculadoraViewModel calculadoraViewModel)
+        public CalculadoraView()
         {
+
+            CalculadoraViewModel calculadoraViewModel = App.Current.Services.GetService<CalculadoraViewModel>();
+
             DataContext = calculadoraViewModel;
             InitializeComponent();
             foreach (var child in GridCalculadora.Children)

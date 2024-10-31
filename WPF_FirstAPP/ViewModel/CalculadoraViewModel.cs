@@ -20,7 +20,7 @@ namespace WPF_FirstAPP.ViewModel
         private string? operador = null;
 
         [ObservableProperty]
-        public string _Txt_Calculadora;
+        public string? _Txt_Calculadora;
 
         public CalculadoraViewModel()
         {
