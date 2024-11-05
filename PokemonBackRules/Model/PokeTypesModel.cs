@@ -10,6 +10,11 @@ namespace PokemonBackRules.Model
 
     public class PokeTypesModel
     {
+        public PokeTypesModel()
+        {
+            Results = new List<Types>();
+        }
+
         [JsonPropertyName("count")]
         public int Count { get; set; }
 

@@ -16,7 +16,7 @@
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
 
-        <ComboBox ItemsSource="{Binding PokeTypes}" Grid.Row="0" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Center" Width="180" Height="30"/>
+        <ComboBox ItemsSource="{Binding PokeTypes}" Grid.Row="0" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Center" Width="180" Height="30" SelectedIndex="{Binding PokemonType,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
         <TextBox Text="{Binding NumPokemons}" Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,60,0" TextWrapping="Wrap" Height="30" VerticalAlignment="Center" Width="180"/>
         <Button Command="{Binding Suka_ClickCommand}" Grid.Row="2" Content="Sukar Pokemon" HorizontalAlignment="Right"  Margin="0,0,60,0" VerticalAlignment="Center" Width="180" Height="40"/>
     </Grid>

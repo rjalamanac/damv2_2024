@@ -11,12 +11,14 @@ namespace PokemonBackRules.Utils
 {
     public static class HttpJsonClient<T>
     {
-        public static T Get(string url)
+        public static async Task<T?> Get(string url)
         {
-            HttpClient httpClient = new HttpClient();
-            HttpResponseMessage datos = await httpClient.GetAsync("https://pokeapi.co/api/v2/type/");
-            string dataget = await datos.Content.ReadAsStringAsync();
-            PokeTypesModel? nuestroModelo = JsonSerializer.Deserialize<T>(dataget);
+            using HttpClient httpClient = new HttpClient();
+            {
+                HttpResponseMessage datos = await httpClient.GetAsync(url);
+                string dataget = await datos.Content.ReadAsStringAsync();
+                return JsonSerializer.Deserialize<T>(dataget);
+            }
         }
     }
 }
