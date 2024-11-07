@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using WPF_FirstAPP.Interfaces;
-using WPF_FirstAPP.Models;
+using WPF_FirstAPP.Utils;
 
 namespace WPF_FirstAPP.ViewModel
 {
@@ -25,11 +25,6 @@ namespace WPF_FirstAPP.ViewModel
 
         public CalculadoraViewModel()
         {
-        }
-
-        public override Task LoadAsync()
-        {
-            return base.LoadAsync();
         }
 
         [RelayCommand]
