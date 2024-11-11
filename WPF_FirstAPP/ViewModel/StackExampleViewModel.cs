@@ -2,6 +2,7 @@
 using WPF_FirstAPP.Models;
 using WPF_FirstAPP.Utils;
 
+
 namespace WPF_FirstAPP.ViewModel
 {
     public partial class StackExampleViewModel : ViewModelBase
@@ -14,7 +15,6 @@ namespace WPF_FirstAPP.ViewModel
         public StackExampleViewModel()
         {
             Items = new ObservableCollection<StackPanelItemModel>();
-            GenerateRandomItems();
         }
 
         private void GenerateRandomItems()
@@ -35,6 +35,12 @@ namespace WPF_FirstAPP.ViewModel
         private string GetRandomColor()
         {
             return $"#{Random.Next(0x1000000):X6}";
+        }
+
+        public override Task LoadAsync()
+        {
+            GenerateRandomItems();
+            return base.LoadAsync();
         }
     }
 }

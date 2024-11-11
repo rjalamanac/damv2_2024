@@ -9,5 +9,6 @@ namespace PokemonBackRules.Utils
     public static class Constantes
     {
         public const string POKE_TYPE_URL= "https://pokeapi.co/api/v2/type/";
+        public const int MAX_POKE_ITEMS = 15;
     }
 }
