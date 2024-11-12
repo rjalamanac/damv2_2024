@@ -1,11 +1,13 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using PokemonBackRules.Model;
+using PokemonBackRules.Models;
 using PokemonBackRules.Utils;
 using System;
 using System.Collections.ObjectModel;
 using System.Net.Http;
 using System.Reflection.Metadata;
+using System.Security.Policy;
 using System.Text.Json;
 
 
@@ -15,6 +17,7 @@ namespace PokemonBackRules.ViewModel
     {
 
         private static readonly Random _random = new();
+        public ObservableCollection<StackPanelItemModel> Items { get; set; }
         public ObservableCollection<string> PokeTypes { get; } = new();
 
         [ObservableProperty]
@@ -22,6 +25,11 @@ namespace PokemonBackRules.ViewModel
 
         [ObservableProperty]
         public int _PokemonType;
+
+        public PokeSukaViewModel()
+        {
+            Items = new ObservableCollection<StackPanelItemModel>();
+        }
 
         public override async Task LoadAsync()
         {
@@ -36,11 +44,15 @@ namespace PokemonBackRules.ViewModel
         [RelayCommand]
         private async Task Suka_Click(object? parameter)
         {
-            if (PokemonType>=0 || PokemonType<= PokeTypes.Count-1 && StringUtils.ConvertToNumber(NumPokemons)!=null)
+            Items.Clear();
+            int numPokemonsGrid = StringUtils.ConvertToNumber(NumPokemons) ?? int.MaxValue;
+            if (PokemonType>=0 && PokemonType<= PokeTypes.Count-1 
+                && StringUtils.ConvertToNumber(NumPokemons)!=null
+                && numPokemonsGrid <= Constantes.MAX_POKE_ITEMS)
             {
                 string tipo = PokeTypes[PokemonType];
-      
-                PokemonsByTypeModel pokemonsByType = await HttpJsonClient<PokemonsByTypeModel>.Get($"{ Constantes.POKE_TYPE_URL}/{ tipo}") 
+
+                PokemonsByTypeModel pokemonsByType = await HttpJsonClient<PokemonsByTypeModel>.Get($"{Constantes.POKE_TYPE_URL}/{tipo}")
                     ?? new PokemonsByTypeModel();
 
                 int indexStartShowPokemon = _random.Next(0, pokemonsByType.pokemon.Count - 2);
@@ -48,19 +60,31 @@ namespace PokemonBackRules.ViewModel
                 List<Task<PokemonSpriteModel>> peticionesSprite = new List<Task<PokemonSpriteModel>>();
 
                 for (int i = indexStartShowPokemon; i < pokemonsByType.pokemon.Count - 1 &&
-                    peticionesSprite.Count<= Constantes.MAX_POKE_ITEMS; i++)
+                    peticionesSprite.Count < numPokemonsGrid; i++)
                 {
-                    peticionesSprite.Add(HttpJsonClient<PokemonSpriteModel>.Get(pokemonsByType.pokemon[i].pokemon.url));                    
+                    peticionesSprite.Add(HttpJsonClient<PokemonSpriteModel>.Get(pokemonsByType.pokemon[i].pokemon.url));
                 }
-                await Task.WhenAll(peticionesSprite);                
+                await Task.WhenAll(peticionesSprite);
 
-                PokemonSpriteModel sprite;
-                foreach (var pokemonSprite in peticionesSprite)
+                await GenerateStackPanelItems(pokemonsByType, indexStartShowPokemon, peticionesSprite, numPokemonsGrid);
+            }
+        }
+
+        private async Task GenerateStackPanelItems(PokemonsByTypeModel pokemonsByType, int indexStartShowPokemon,
+            List<Task<PokemonSpriteModel>> peticionesSprite, int numPokemonsGrid)
+        {
+            int contador = 0;
+            PokemonSpriteModel sprite;
+            for (int i = indexStartShowPokemon; i < pokemonsByType.pokemon.Count - 1 &&
+               contador < numPokemonsGrid; i++)
+            {
+                sprite = await peticionesSprite[contador];
+                contador++;
+                Items.Add(new StackPanelItemModel
                 {
-                    sprite = await pokemonSprite;
-
-                }
-
+                    ImagePath = sprite.sprites.back_default ?? Constantes.MISSINGNO_IMAGE_PATH,
+                    PokemonName = pokemonsByType.pokemon[i].pokemon.name
+                });
             }
         }
     }

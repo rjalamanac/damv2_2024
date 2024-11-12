@@ -18,6 +18,27 @@
 
         <ComboBox ItemsSource="{Binding PokeTypes}" Grid.Row="0" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Center" Width="180" Height="30" SelectedIndex="{Binding PokemonType,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
         <TextBox Text="{Binding NumPokemons}" Grid.Row="0" HorizontalAlignment="Right" Margin="0,0,60,0" TextWrapping="Wrap" Height="30" VerticalAlignment="Center" Width="180"/>
+        <ScrollViewer Grid.Row="1">
+            <StackPanel >
+                <ItemsControl ItemsSource="{Binding Items, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Margin="5">
+                                <StackPanel>
+                                    <Image Source="{Binding ImagePath}" Stretch="Uniform" Height="100"/>
+                                    <TextBlock Text="{Binding PokemonName}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
         <Button Command="{Binding Suka_ClickCommand}" Grid.Row="2" Content="Sukar Pokemon" HorizontalAlignment="Right"  Margin="0,0,60,0" VerticalAlignment="Center" Width="180" Height="40"/>
     </Grid>
 </UserControl>

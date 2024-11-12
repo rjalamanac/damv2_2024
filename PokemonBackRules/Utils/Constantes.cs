@@ -10,5 +10,6 @@ namespace PokemonBackRules.Utils
     {
         public const string POKE_TYPE_URL= "https://pokeapi.co/api/v2/type/";
         public const int MAX_POKE_ITEMS = 15;
+        public const string MISSINGNO_IMAGE_PATH = "../Resources/missingNo.jpg";
     }
 }
