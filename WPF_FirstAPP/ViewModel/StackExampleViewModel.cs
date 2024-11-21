@@ -14,20 +14,28 @@ namespace WPF_FirstAPP.ViewModel
 
         private readonly ILibrosProvider _librosProvider;
 
-        public ObservableCollection<StackPanelItemModel> Items { get; set; }
+
+        private ObservableCollection<StackPanelItemModel> _items;
+
+        public ObservableCollection<StackPanelItemModel> Items
+        {
+            get { return _items; }
+            set
+            {
+                _items = value;
+                OnPropertyChanged(nameof(Items));
+            }
+        }
 
         public StackExampleViewModel(ILibrosProvider librosProvider)
         {
             _librosProvider = librosProvider;
         }
 
-        public StackExampleViewModel()
-        {
-        }
 
         private async Task GenerateRandomItemsAsync()
         {
-            Items = [];
+            Items = new ObservableCollection<StackPanelItemModel>();
 
             List<LibroDTO> listaLibros =await _librosProvider.GetAsync();
 

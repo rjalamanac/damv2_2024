@@ -8,9 +8,6 @@
              xmlns:converter="clr-namespace:WPF_FirstAPP.Converter"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <UserControl.DataContext>
-        <viewmodel:StackExampleViewModel/>
-    </UserControl.DataContext>
     <UserControl.Resources>
         <converter:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
     </UserControl.Resources>
