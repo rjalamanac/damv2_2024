@@ -1,6 +1,8 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using WPF_FirstAPP.DTO;
+using WPF_FirstAPP.Interfaces;
 using WPF_FirstAPP.Models;
 using WPF_FirstAPP.Utils;
 
@@ -10,45 +12,39 @@ namespace WPF_FirstAPP.ViewModel
     public partial class StackExampleViewModel : ViewModelBase
     {
 
-        private static readonly Random Random = new();
+        private readonly ILibrosProvider _librosProvider;
 
         public ObservableCollection<StackPanelItemModel> Items { get; set; }
 
-        public StackExampleViewModel()
+        public StackExampleViewModel(ILibrosProvider librosProvider)
         {
-            
+            _librosProvider = librosProvider;
         }
 
-        private void GenerateRandomItems()
+        public StackExampleViewModel()
+        {
+        }
+
+        private async Task GenerateRandomItemsAsync()
         {
             Items = [];
-            int itemCount = Random.Next(Constants.MIN_NUMBER_ITEMS_STACK_PANEL, Constants.MAX_NUMBER_ITEMS_STACK_PANEL);
-            for (int i = 0; i < itemCount; i++)
+
+            List<LibroDTO> listaLibros =await _librosProvider.GetAsync();
+
+            foreach(var libro in listaLibros)
             {
                 Items.Add(new StackPanelItemModel
                 {
                     ImagePath = Constants.HALLOWEEN_URL_PATH,
-                    BackgroundColor = GetRandomColor(),
-                    TextColor = GetRandomColor(),
-                    Text = $"Item {i + 1}"
+                    Text = $"{libro.Titulo}: {libro.NumPaginas}"
                 });
             }
         }
 
-        private string GetRandomColor()
+        public override async Task LoadAsync()
         {
-            return $"#{Random.Next(0x1000000):X6}";
-        }
-
-        public override Task LoadAsync()
-        {
-            GenerateRandomItems();
-            return base.LoadAsync();
-        }
-
-
-        private void PerformDafuk()
-        {
+            await GenerateRandomItemsAsync();
+            base.LoadAsync();
         }
     }
 }

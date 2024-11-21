@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestorDeTareas.Utils
+namespace WPF_FirstAPP.Utils
 {
     public class StringUtils
     {

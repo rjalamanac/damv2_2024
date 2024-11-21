@@ -43,6 +43,7 @@ namespace WPF_FirstAPP
 
             //Services
             services.AddSingleton<IPrimeNumberProvider, PrimeNumberService>();
+            services.AddSingleton<ILibrosProvider, LibrosApiService>();        
             return services.BuildServiceProvider();
         }
     }

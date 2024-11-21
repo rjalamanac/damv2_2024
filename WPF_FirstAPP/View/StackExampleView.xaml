@@ -15,7 +15,6 @@
         <converter:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
     </UserControl.Resources>
     <Grid>
-        <Button Content="dafuk" Command="{Binding Dafuk}"></Button>
         <ScrollViewer>
             <StackPanel >
                 <ItemsControl ItemsSource="{Binding Items, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
@@ -28,11 +27,11 @@
                         <DataTemplate>
                             <Border Margin="5">
                                 <StackPanel>
-                                    <Border Background="{Binding BackgroundColor}" Height="100" Padding="5">
+                                    <Border Height="100" Padding="5">
                                         <Image Source="{Binding ImagePath}" Stretch="Uniform"/>
                                     </Border>
                                     <Border Background="White" Height="50">
-                                        <TextBlock Text="{Binding Text}" Foreground="{Binding TextColor}"
+                                        <TextBlock Text="{Binding Text}" 
                                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                     </Border>
                                 </StackPanel>
