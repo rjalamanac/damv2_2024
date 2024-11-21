@@ -13,12 +13,12 @@ namespace GestorDeTareas.Services
         private const string LOG_PATH = "excepcion.txt";
         public static async Task WriteLog(string mensaje)
         {
-             FileUtils<string>.WriteFile(LOG_PATH, mensaje);
+            await FileUtils<string>.WriteFile(LOG_PATH, mensaje);
         }
 
         public static async Task WriteLog(Exception ex)
         {
-            FileUtils<Exception>.WriteFile(LOG_PATH, ex);
+            await FileUtils<Exception>.WriteFile(LOG_PATH, ex);
         }
     }
 }

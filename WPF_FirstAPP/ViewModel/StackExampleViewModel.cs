@@ -1,4 +1,6 @@
-﻿using System.Collections.ObjectModel;
+﻿using CommunityToolkit.Mvvm.Input;
+using System.Collections.ObjectModel;
+using System.Windows.Input;
 using WPF_FirstAPP.Models;
 using WPF_FirstAPP.Utils;
 
@@ -14,11 +16,12 @@ namespace WPF_FirstAPP.ViewModel
 
         public StackExampleViewModel()
         {
-            Items = new ObservableCollection<StackPanelItemModel>();
+            
         }
 
         private void GenerateRandomItems()
         {
+            Items = [];
             int itemCount = Random.Next(Constants.MIN_NUMBER_ITEMS_STACK_PANEL, Constants.MAX_NUMBER_ITEMS_STACK_PANEL);
             for (int i = 0; i < itemCount; i++)
             {
@@ -41,6 +44,11 @@ namespace WPF_FirstAPP.ViewModel
         {
             GenerateRandomItems();
             return base.LoadAsync();
+        }
+
+
+        private void PerformDafuk()
+        {
         }
     }
 }

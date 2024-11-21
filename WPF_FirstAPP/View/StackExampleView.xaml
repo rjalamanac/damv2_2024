@@ -15,6 +15,7 @@
         <converter:ColorToBrushConverter x:Key="ColorToBrushConverter"/>
     </UserControl.Resources>
     <Grid>
+        <Button Content="dafuk" Command="{Binding Dafuk}"></Button>
         <ScrollViewer>
             <StackPanel >
                 <ItemsControl ItemsSource="{Binding Items, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
