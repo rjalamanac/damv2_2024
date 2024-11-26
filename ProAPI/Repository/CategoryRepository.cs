@@ -18,40 +18,23 @@ namespace ApiPelicula.Repository
             _context = context;
             _cache = cache;
         }
-        public async Task<bool> CategoryExistsAsync(string name)
+
+        public async Task<bool> Save()
         {
-            return await _context.Categories.AnyAsync(c => c.Name == name);
+            var result = await _context.SaveChangesAsync() >= 0;
+            if (result)
+            {
+                ClearCategoryCache();
+            }
+            return result;
         }
 
-        public async Task<bool> CategoryExistsAsync(int id)
+        public void ClearCategoryCache()
         {
-            return await _context.Categories.AnyAsync(c => c.Id == id);
+            _cache.Remove(CategoryCacheKey);
         }
 
-        public async Task<bool> CreateCategoryAsync(Category category)
-        {
-            _context.Categories.Add(category);
-            return await Save();
-        }
-
-        public async Task<bool> UpdateCategoryAsync(Category category)
-        {
-            category.CreatedDate = DateTime.Now;
-            _context.Update(category);
-            return await Save();
-        }
-
-        public async Task<bool> DeleteCategoryAsync(int id)
-        {
-            var category = await GetCategoryAsync(id);
-            if (category == null)
-                return false;
-
-            _context.Categories.Remove(category);
-            return await Save();
-        }
-
-        public async Task<ICollection<Category>> GetCategoriesAsync()
+        public async Task<ICollection<Category>> GetAllAsync()
         {
             if (_cache.TryGetValue(CategoryCacheKey, out ICollection<Category> categoriesCached))
                 return categoriesCached;
@@ -64,7 +47,7 @@ namespace ApiPelicula.Repository
             return categoriesFromDb;
         }
 
-        public async Task<Category> GetCategoryAsync(int id)
+        public async Task<Category> GetAsync(int id)
         {
             if (_cache.TryGetValue(CategoryCacheKey, out ICollection<Category> categoriesCached))
             {
@@ -76,24 +59,32 @@ namespace ApiPelicula.Repository
             return await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
         }
 
-
-        public async Task<bool> Save()
+        public async Task<bool> ExistsAsync(int id)
         {
-            var result = await _context.SaveChangesAsync() >= 0;
-
-
-            if (result)
-            {
-                ClearCategoryCache();
-            }
-
-            return result;
+            return await _context.Categories.AnyAsync(c => c.Id == id);
         }
 
-
-        public void ClearCategoryCache()
+        public async Task<bool> CreateAsync(Category category)
         {
-            _cache.Remove(CategoryCacheKey);
+            _context.Categories.Add(category);
+            return await Save();
+        }
+
+        public async Task<bool> UpdateAsync(Category category)
+        {
+            category.CreatedDate = DateTime.Now;
+            _context.Update(category);
+            return await Save();
+        }
+
+        public async Task<bool> DeleteAsync(int id)
+        {
+            var category = await GetAsync(id);
+            if (category == null)
+                return false;
+
+            _context.Categories.Remove(category);
+            return await Save();
         }
     }
 }
