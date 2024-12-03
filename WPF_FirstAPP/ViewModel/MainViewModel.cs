@@ -13,17 +13,19 @@ namespace WPF_FirstAPP.ViewModel
         private ViewModelBase? _selectedViewModel;
 
         public MainViewModel(NumPrimoViewModel numPrimoViewModel, CalculadoraViewModel calculadoraViewModel,
-            StackExampleViewModel stackExampleViewModel)
+            StackExampleViewModel stackExampleViewModel, ContactManagerViewModel contactManagerViewModel)
         {
-            _selectedViewModel = stackExampleViewModel;
+            _selectedViewModel = contactManagerViewModel;
             StackExampleViewModel = stackExampleViewModel;
             NumPrimoViewModel = numPrimoViewModel;
             CalculadoraViewModel = calculadoraViewModel;
+            ContactManagerViewModel = contactManagerViewModel;
         }
 
         public NumPrimoViewModel NumPrimoViewModel { get; }
         public CalculadoraViewModel CalculadoraViewModel { get; }
         public StackExampleViewModel StackExampleViewModel { get; }
+        public ContactManagerViewModel ContactManagerViewModel { get; }
 
         public ViewModelBase? SelectedViewModel
         {
