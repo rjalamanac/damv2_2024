@@ -40,10 +40,12 @@ namespace WPF_FirstAPP
             services.AddTransient<NumPrimoViewModel>();
             services.AddTransient<CalculadoraViewModel>();
             services.AddTransient<StackExampleViewModel>();
+            services.AddTransient<ContactManagerViewModel>();
 
             //Services
             services.AddSingleton<IPrimeNumberProvider, PrimeNumberService>();
-            services.AddSingleton<ILibrosProvider, LibrosApiService>();        
+            services.AddSingleton<ILibrosProvider, LibrosApiService>();
+            services.AddSingleton(typeof(IFileService<>), typeof(FileService<>));
             return services.BuildServiceProvider();
         }
     }
