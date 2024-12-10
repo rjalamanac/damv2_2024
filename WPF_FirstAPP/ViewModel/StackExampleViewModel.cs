@@ -41,11 +41,7 @@ namespace WPF_FirstAPP.ViewModel
 
             foreach(var libro in listaLibros)
             {
-                Items.Add(new StackPanelItemModel
-                {
-                    ImagePath = Constants.HALLOWEEN_URL_PATH,
-                    Text = $"{libro.Titulo}: {libro.NumPaginas}"
-                });
+                Items.Add(StackPanelItemModel.CreateModelFromDTO(libro));
             }
         }
 
