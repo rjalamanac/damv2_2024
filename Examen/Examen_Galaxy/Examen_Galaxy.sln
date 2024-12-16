@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examen_Galaxy", "Examen_Galaxy.csproj", "{46866994-D6F5-4C0C-A0FB-29F52F8E588D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetsAPI", "..\PlanetsAPI\PlanetsAPI.csproj", "{FE9602D0-A869-47FA-B869-E4DB843F1972}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46866994-D6F5-4C0C-A0FB-29F52F8E588D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46866994-D6F5-4C0C-A0FB-29F52F8E588D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46866994-D6F5-4C0C-A0FB-29F52F8E588D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46866994-D6F5-4C0C-A0FB-29F52F8E588D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE9602D0-A869-47FA-B869-E4DB843F1972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9602D0-A869-47FA-B869-E4DB843F1972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9602D0-A869-47FA-B869-E4DB843F1972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9602D0-A869-47FA-B869-E4DB843F1972}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {89640A89-6505-41AF-96E7-097CE05D2764}
+	EndGlobalSection
+EndGlobal

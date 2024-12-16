@@ -1,0 +1,6 @@
+@PlanetsAPI_HostAddress = http://localhost:5212
+
+GET {{PlanetsAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

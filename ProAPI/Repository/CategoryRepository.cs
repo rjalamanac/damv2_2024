@@ -11,7 +11,7 @@ namespace ApiPelicula.Repository
     {
         private readonly ApplicationDbContext _context;
         private readonly IMemoryCache _cache;
-        private readonly string CategoryCacheKey = "CategoryCacheKey";
+        private readonly string CategoryCacheKey = "CategoryCacheKey"; //cambiadmelo lokos
         private readonly int CacheExpirationTime = 3600;
         public CategoryRepository(ApplicationDbContext context, IMemoryCache cache)
         {

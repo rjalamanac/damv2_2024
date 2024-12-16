@@ -15,10 +15,28 @@ namespace ApiPelicula.Controllers
     [ApiController]
     public class CategoryController : BaseController<Category, CategoryDto, CreateCategoryDto>
     {
-        public CategoryController(ICategoryRepository categoryRepository, IMapper mapper, ILogger<CategoryController> logger)
+        public CategoryController(ICategoryRepository categoryRepository, 
+            IMapper mapper, ILogger<CategoryController> logger)
             : base(categoryRepository, mapper, logger)
         {
 
+        }
+
+        [AllowAnonymous]
+        [HttpGet(Name = "lol")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<IActionResult> GetLol()
+        {
+            try
+            {
+                var entities = _mapper.Map<List<CategoryDto>>(await _repository.GetAllAsync());
+                return Ok(entities);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error fetching data");
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
     }
 }

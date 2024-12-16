@@ -5,20 +5,20 @@ namespace FirstAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class LibroController : Controller
+    public class PlanetaController : Controller
     {
-        private readonly ILogger<LibroDTO> _logger;
+        private readonly ILogger<PlanetaDTO> _logger;
 
-        private static List<LibroDTO> Libros = new List<LibroDTO>()
+        private static List<PlanetaDTO> Libros = new List<PlanetaDTO>()
         {
-            new LibroDTO
+            new PlanetaDTO
             {
                 ISBN="123456",
                 Id=1,
                 NumPaginas=200,
                 Titulo="Pocahontas"
             },
-            new LibroDTO
+            new PlanetaDTO
             {
                 ISBN="6666",
                 Id=2,
@@ -27,25 +27,25 @@ namespace FirstAPI.Controllers
             }
         };
 
-        public LibroController(ILogger<LibroDTO> logger)
+        public PlanetaController(ILogger<PlanetaDTO> logger)
         {
             _logger = logger;
         }
 
         [HttpGet(Name = "GetAllElement")]
-        public IEnumerable<LibroDTO> Get()
+        public IEnumerable<PlanetaDTO> Get()
         {
             return Libros;
         }
 
         [HttpGet("{id}")]
-        public LibroDTO GetOne(int id)
+        public PlanetaDTO GetOne(int id)
         {
             return Libros.FirstOrDefault(x=>x.Id==id);
         }
 
         [HttpPost]
-        public LibroDTO Post([FromBody] LibroDTO libro)
+        public PlanetaDTO Post([FromBody] PlanetaDTO libro)
         {
             if (Libros.Any(x=> x.Id==libro.Id))
             {
@@ -56,13 +56,13 @@ namespace FirstAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public LibroDTO Put([FromBody] LibroDTO libro,int id)
+        public PlanetaDTO Put([FromBody] PlanetaDTO libro,int id)
         {
             if (id!=libro?.Id)
             {
                 return null;
             }
-            LibroDTO? libroBBDD = Libros.FirstOrDefault(x => x.Id == libro.Id);
+            PlanetaDTO? libroBBDD = Libros.FirstOrDefault(x => x.Id == libro.Id);
             if (libroBBDD == null)
             {
                 return null;
@@ -76,7 +76,7 @@ namespace FirstAPI.Controllers
         [HttpDelete("{id}")]
         public bool Remove(int id)
         {
-            LibroDTO? libroBBDD = Libros.FirstOrDefault(x => x.Id == id);
+            PlanetaDTO? libroBBDD = Libros.FirstOrDefault(x => x.Id == id);
             if (libroBBDD == null)
             {
                 return false;
