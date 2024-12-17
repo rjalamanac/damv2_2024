@@ -12,7 +12,12 @@ namespace Examen_Galaxy.Constants
         internal const string PLANET_RESOURCE = "Planeta";
         internal const string RESOURCES_PATH = "/Resources/";
         internal const string IMAGES_EXTENSION = ".jpg";
-        internal const string PATH_IMAGE_NOT_FOUND = "/Resources/Not_found.png";
+        internal const string PATH_IMAGE_NOT_FOUND = "Not_found.png";
+        internal static List<string> PLANETAS_POSIBLES = new List<string>()
+        {
+            "Planet_1.jpg",
+            "Planet_2.jpg"
+        };
 
     }
 }

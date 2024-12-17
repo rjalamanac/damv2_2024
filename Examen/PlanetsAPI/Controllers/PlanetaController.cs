@@ -20,8 +20,28 @@ namespace PlanetsAPI.Controllers
                 Atmosfera="200",
                 Distancia=1,
                 Temperatura="Caloh",
-                Tipo="Tipazo"
-                
+                Tipo="Tipazo",
+                ImageName="Planet_1"
+            },
+            new PlanetaDTO
+            {
+                Nombre="123456",
+                Id=2,
+                Atmosfera="200",
+                Distancia=1,
+                Temperatura="Caloh",
+                Tipo="Tipazo",
+                ImageName="Planet_2"
+            },
+            new PlanetaDTO
+            {
+                Nombre="123456",
+                Id=3,
+                Atmosfera="200",
+                Distancia=1,
+                Temperatura="Caloh",
+                Tipo="Tipazo",
+                ImageName="Dafuk"
             }
         };
 
@@ -36,7 +56,7 @@ namespace PlanetsAPI.Controllers
             return Planetas;
         }
 
-        
+
         [HttpPost]
         public PlanetaDTO Post([FromBody] PlanetaDTO libro)
         {

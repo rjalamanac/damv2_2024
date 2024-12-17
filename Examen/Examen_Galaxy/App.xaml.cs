@@ -38,10 +38,12 @@ namespace Examen_Galaxy
             //view viewModels
             services.AddTransient<MainViewModel>();
             services.AddTransient<GalaxyOverviewViewModel>();
+            services.AddTransient<ExplorePlanetViewModel>();
 
 
             //Services
             services.AddSingleton(typeof(IHttpJsonProvider<>), typeof(HttpJsonService<>));
+            services.AddSingleton<IStringUtils, StringUtils>();
             return services.BuildServiceProvider();
         }
     }

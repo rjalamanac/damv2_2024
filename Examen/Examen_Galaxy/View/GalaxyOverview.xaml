@@ -4,18 +4,23 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Examen_Galaxy.View" 
-             xmlns:viewmodel="clr-namespace:Examen_Galaxy.ViewModel" 
+             xmlns:viewmodel="clr-namespace:Examen_Galaxy.ViewModel"
+             xmlns:view="clr-namespace:Examen_Galaxy.View" 
              d:DataContext="{d:DesignInstance Type=viewmodel:GalaxyOverviewViewModel}"
              mc:Ignorable="d" 
              Background="Wheat"
              d:DesignHeight="450" d:DesignWidth="800">
-    
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type viewmodel:ExplorePlanetViewModel}">
+            <view:ExplorePlanetView/>
+        </DataTemplate>
+    </UserControl.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="200"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
         <ScrollViewer Grid.Row="0">
             <StackPanel >
                 <ItemsControl ItemsSource="{Binding Items, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}">
@@ -28,8 +33,8 @@
                         <DataTemplate>
                             <Border Margin="5">
                                 <StackPanel>
-                                    <Button Height="100" Padding="5" Command="{Binding SelectViewModelCommand}" CommandParameter="{Binding Id}">
-                                        <Image Source="{Binding ImagePath}" Stretch="Uniform" />
+                                    <Button Height="100" Padding="5" Command="{Binding DataContext.SelectViewModelCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" CommandParameter="{Binding Id}">
+                                        <Image Source="{Binding ImagePath}" Stretch="Uniform"/>
                                     </Button>
                                     <Border Background="White" Height="50">
                                         <TextBlock Text="{Binding PlanetName}" 

@@ -7,13 +7,13 @@
         xmlns:viewmodel="clr-namespace:Examen_Galaxy.ViewModel" 
         xmlns:local="clr-namespace:Examen_Galaxy"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="700" Width="800">
     <Window.Resources>
         <DataTemplate DataType="{x:Type viewmodel:GalaxyOverviewViewModel}">
             <view:GalaxyOverview/>
         </DataTemplate>
     </Window.Resources>
-    
+
     <Grid>
         <ContentControl Content="{Binding SelectedViewModel}"/>
     </Grid>

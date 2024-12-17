@@ -9,19 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Resource1.resx" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Resources\Not_found.png" />
     <None Remove="Resources\Planet_1.jpg" />
-    <None Remove="Resources\Planet_2.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Resources\Not_found.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
   </ItemGroup>
 
 	<ItemGroup>
@@ -30,27 +18,29 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Resource Include="Resource1.resx">
-	    <Generator>ResXFileCodeGenerator</Generator>
-	    <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+	  <None Update="Resources\Not_found.png">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
-	  <Resource Include="Resources\Planet_2.jpg">
+	  </None>
+	  <None Update="Resources\Planet_1.jpg">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </Resource>
+	  </None>
+	  <None Update="Resources\Planet_2.jpg">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Resource1.Designer.cs">
+	  <Compile Update="Resource.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>
-	    <DependentUpon>Resource1.resx</DependentUpon>
+	    <DependentUpon>Resource.resx</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="Resources\Planet_1.jpg">
-	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	  </None>
+	  <EmbeddedResource Update="Resource.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
 	</ItemGroup>
 </Project>

@@ -4,6 +4,7 @@ using Examen_Galaxy.Constants;
 using Examen_Galaxy.DTO;
 using Examen_Galaxy.Interface;
 using Examen_Galaxy.Model;
+using Examen_Galaxy.Service;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -13,27 +14,25 @@ using System.Threading.Tasks;
 
 namespace Examen_Galaxy.ViewModel
 {
-    public partial  class GalaxyOverviewViewModel : ViewModelBase
+    public partial class GalaxyOverviewViewModel : ViewModelBase
     {
 
         [ObservableProperty]
         private ObservableCollection<PlanetModel> _items;
 
         private readonly IHttpJsonProvider<PlanetaDTO> _httpJsonProvider;
+        private readonly ExplorePlanetViewModel _explorePlanetViewModel;
+        private readonly IStringUtils _stringUtils;
+        [ObservableProperty]
         private ViewModelBase? _selectedViewModel;
 
-        public ViewModelBase? SelectedViewModel
-        {
-            get => _selectedViewModel;
-            set
-            {
-                SetProperty(ref _selectedViewModel, value);
-            }
-        }
-
-        public GalaxyOverviewViewModel(IHttpJsonProvider<PlanetaDTO> httpJsonProvider)
+        public GalaxyOverviewViewModel(IHttpJsonProvider<PlanetaDTO> httpJsonProvider,
+            ExplorePlanetViewModel explorePlanetViewModel, IStringUtils stringUtils)
         {
             _httpJsonProvider = httpJsonProvider;
+            _explorePlanetViewModel = explorePlanetViewModel;
+            _stringUtils = stringUtils;
+            _items = new ObservableCollection<PlanetModel>();
         }
 
         public override async Task LoadAsync()
@@ -47,10 +46,12 @@ namespace Examen_Galaxy.ViewModel
         }
 
         [RelayCommand]
-        private async void SelectViewModel(object? parameter)
+        private async Task SelectViewModel(object? parameter)
         {
-            SelectedViewModel = parameter as ViewModelBase;
-            await LoadAsync();
+            _explorePlanetViewModel.SetIdPlanet(_stringUtils.ConvertToInteger(parameter?.ToString() ?? string.Empty) ?? int.MinValue);
+            _explorePlanetViewModel.SetParentViewModel(this);
+            SelectedViewModel = _explorePlanetViewModel;
+            await _explorePlanetViewModel.LoadAsync();
         }
     }
 }

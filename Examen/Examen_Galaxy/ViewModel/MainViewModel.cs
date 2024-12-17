@@ -16,7 +16,7 @@ namespace Examen_Galaxy.ViewModel
         public MainViewModel(GalaxyOverviewViewModel galaxyOverviewViewModel)
         {
             _selectedViewModel = galaxyOverviewViewModel;
-            GalaxyOverviewViewModel= galaxyOverviewViewModel;
+            GalaxyOverviewViewModel = galaxyOverviewViewModel;
         }
 
         public ViewModelBase? SelectedViewModel
@@ -29,7 +29,7 @@ namespace Examen_Galaxy.ViewModel
         }
 
         [RelayCommand]
-        private async void SelectViewModel(object? parameter)
+        private async Task SelectViewModel(object? parameter)
         {
             SelectedViewModel = parameter as ViewModelBase;
             await LoadAsync();
