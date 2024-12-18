@@ -24,12 +24,12 @@ namespace ApiPelicula.Repository
             var result = await _context.SaveChangesAsync() >= 0;
             if (result)
             {
-                ClearCategoryCache();
+                ClearCache();
             }
             return result;
         }
 
-        public void ClearCategoryCache()
+        public void ClearCache()
         {
             _cache.Remove(CategoryCacheKey);
         }

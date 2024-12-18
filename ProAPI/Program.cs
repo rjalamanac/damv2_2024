@@ -24,6 +24,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Add services to the container.
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<ILibroRepository, LibroRepository>();
 builder.Services.AddAutoMapper(typeof(ApplicationMapper));
 //Logger setup
 builder.Logging.ClearProviders();

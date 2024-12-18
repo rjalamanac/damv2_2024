@@ -8,7 +8,7 @@ namespace ApiPelicula.Data
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
-            
+
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -18,6 +18,7 @@ namespace ApiPelicula.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
+        public DbSet<LibroEntity> Libros { get; set; }
 
     }
 }

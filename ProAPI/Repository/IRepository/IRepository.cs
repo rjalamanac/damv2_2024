@@ -11,7 +11,7 @@ namespace RestAPI.Repository
         Task<bool> UpdateAsync(TEntity category);
         Task<bool> DeleteAsync(int id);
         Task<bool> Save();
-        void ClearCategoryCache();
+        void ClearCache();
     }
 }
 

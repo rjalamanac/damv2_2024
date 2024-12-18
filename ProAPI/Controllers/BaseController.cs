@@ -44,7 +44,7 @@
             }
 
             [AllowAnonymous]
-            [HttpGet("{id:int}", Name = "GetEntity")]
+            [HttpGet("{id:int}")]
             [ProducesResponseType(StatusCodes.Status200OK)]
             [ProducesResponseType(StatusCodes.Status404NotFound)]
             public async Task<IActionResult> Get(int id)
