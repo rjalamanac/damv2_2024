@@ -1,6 +1,7 @@
 ﻿using ApiPelicula.Models.DTOs.CategoryDto;
 using ApiPelicula.Models.DTOs.UserDto;
 using AutoMapper;
+using RestAPI.Models.DTOs;
 using RestAPI.Models.DTOs.LibroDTO;
 using RestAPI.Models.Entity;
 
@@ -14,6 +15,8 @@ namespace ApiPelicula.AutoMapper
             CreateMap<Category, CreateCategoryDto>().ReverseMap();
             CreateMap<LibroEntity, LibroDTO>().ReverseMap();
             CreateMap<LibroEntity, CreateLibroDTO>().ReverseMap();
+            CreateMap<EditorialEntity, EditorialDTO>().ReverseMap();
+            CreateMap<EditorialEntity, CreateEditorialDTO>().ReverseMap();
             CreateMap<AppUser, UserDto>().ReverseMap();
         }
     }

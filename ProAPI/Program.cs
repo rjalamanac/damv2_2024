@@ -11,6 +11,8 @@ using Microsoft.Extensions.Caching.Memory;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using RestAPI.Models.Entity;
+using RestAPI.Repository;
+using RestAPI.Repository.IRepository;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -25,6 +27,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ILibroRepository, LibroRepository>();
+builder.Services.AddScoped<IEditorialRepository, EditorialRepository>();
 builder.Services.AddAutoMapper(typeof(ApplicationMapper));
 //Logger setup
 builder.Logging.ClearProviders();

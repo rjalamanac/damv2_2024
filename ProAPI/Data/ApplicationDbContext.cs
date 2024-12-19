@@ -19,6 +19,7 @@ namespace ApiPelicula.Data
         public DbSet<User> Users { get; set; }
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<LibroEntity> Libros { get; set; }
+        public DbSet<EditorialEntity> Editoriales { get; set; }
 
     }
 }
