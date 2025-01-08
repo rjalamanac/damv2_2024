@@ -20,6 +20,7 @@ namespace ApiPelicula.Data
         public DbSet<AppUser> AppUsers { get; set; }
         public DbSet<LibroEntity> Libros { get; set; }
         public DbSet<EditorialEntity> Editoriales { get; set; }
+        public DbSet<SovietTankEntity> SovietTanks { get;set; }
 
     }
 }

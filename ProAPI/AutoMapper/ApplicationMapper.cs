@@ -17,6 +17,8 @@ namespace ApiPelicula.AutoMapper
             CreateMap<LibroEntity, CreateLibroDTO>().ReverseMap();
             CreateMap<EditorialEntity, EditorialDTO>().ReverseMap();
             CreateMap<EditorialEntity, CreateEditorialDTO>().ReverseMap();
+            CreateMap<SovietTankEntity, SovietTankDTO>().ReverseMap();
+            CreateMap<CreateSovietTankDTO, SovietTankEntity>().ReverseMap();
             CreateMap<AppUser, UserDto>().ReverseMap();
         }
     }

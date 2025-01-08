@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "a388628c-62e1-4a7c-99dd-42e481362484",
+		"name": "API PRO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40877822"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Bimba Joga\",\r\n  \"userName\": \"Bimba_Joga\",\r\n  \"email\": \"random@gmail.jpg\",\r\n  \"password\": \"u76x&s~:vtDVX*[4%#\",\r\n  \"role\": \"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}users/register",
+							"host": [
+								"{{API_URL}}users"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\":\"Bimba_Joga\",\r\n    \"password\": \"u76x&s~:vtDVX*[4%#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}users/login",
+							"host": [
+								"{{API_URL}}users"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tankes",
+			"item": [
+				{
+					"name": "Obtener Tankes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}SovietTank",
+							"host": [
+								"{{API_URL}}SovietTank"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Tanke",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"ETHAN 2005 SUFRIDO HTML PRIPT MIERCOLES\",\r\n    \"damage\": -10,\r\n    \"Bastidor\": \"SIN RUEDAS Y CUESTA ABAJO\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}SovietTank",
+							"host": [
+								"{{API_URL}}SovietTank"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkJpbWJhX0pvZ2EiLCJyb2xlIjoiYWRtaW4iLCJuYmYiOjE3MzYzNTMzMzgsImV4cCI6MTczNjk1ODEzOCwiaWF0IjoxNzM2MzUzMzM4fQ.tNJLlPmxiJGlPaYfCLWTwVt5zLbYqdj7oXjf-GcKvd0",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Libros",
+			"item": [
+				{
+					"name": "Obtener Libros",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{API_URL}}Libro",
+							"host": [
+								"{{API_URL}}Libro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Libro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Mitankityko\",\r\n    \"Paginas\": 1000,\r\n    \"isbn\": \"PUTIN_32\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{API_URL}}Libro",
+							"host": [
+								"{{API_URL}}Libro"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkJpbWJhX0pvZ2EiLCJyb2xlIjoiYWRtaW4iLCJuYmYiOjE3MzYzNTMzMzgsImV4cCI6MTczNjk1ODEzOCwiaWF0IjoxNzM2MzUzMzM4fQ.tNJLlPmxiJGlPaYfCLWTwVt5zLbYqdj7oXjf-GcKvd0",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_URL",
+			"value": "\nhttps://localhost:7777/api/",
+			"type": "string"
+		}
+	]
+}

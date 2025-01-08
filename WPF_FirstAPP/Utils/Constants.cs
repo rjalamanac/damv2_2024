@@ -25,7 +25,8 @@ namespace WPF_FirstAPP.Utils
         #endregion
 
         #region API Url
-        public const string BASE_URL = "http://localhost:5000/";
+        public const string BASE_URL = "http://localhost:5072/api/";
+        public const string LOGIN_PATH = "users";
         public const string LIBROS_PATH = "libro";
         #endregion
 

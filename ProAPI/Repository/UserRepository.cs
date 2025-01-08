@@ -76,7 +76,7 @@ namespace ApiPelicula.Repository
                     new Claim(ClaimTypes.Role, roles.FirstOrDefault())
 
                 }),
-                Expires = DateTime.UtcNow.AddDays(TokenExpirationDays),
+                Expires = DateTime.UtcNow.AddMinutes(TokenExpirationDays),
                 SigningCredentials = new(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 

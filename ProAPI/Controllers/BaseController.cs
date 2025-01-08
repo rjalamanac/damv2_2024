@@ -26,8 +26,8 @@
                 _logger = logger;
             }
 
-            [AllowAnonymous]
             [HttpGet]
+            [Authorize(Roles = "admin")]
             [ProducesResponseType(StatusCodes.Status200OK)]
             public async Task<IActionResult> GetAll()
             {
@@ -43,7 +43,7 @@
                 }
             }
 
-            [AllowAnonymous]
+            [Authorize(Roles = "admin")]
             [HttpGet("{id:int}")]
             [ProducesResponseType(StatusCodes.Status200OK)]
             [ProducesResponseType(StatusCodes.Status404NotFound)]

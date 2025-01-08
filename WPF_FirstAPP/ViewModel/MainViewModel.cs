@@ -15,7 +15,7 @@ namespace WPF_FirstAPP.ViewModel
         public MainViewModel(NumPrimoViewModel numPrimoViewModel, CalculadoraViewModel calculadoraViewModel,
             StackExampleViewModel stackExampleViewModel, ContactManagerViewModel contactManagerViewModel)
         {
-            _selectedViewModel = contactManagerViewModel;
+            _selectedViewModel = stackExampleViewModel;
             StackExampleViewModel = stackExampleViewModel;
             NumPrimoViewModel = numPrimoViewModel;
             CalculadoraViewModel = calculadoraViewModel;

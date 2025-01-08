@@ -27,6 +27,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ILibroRepository, LibroRepository>();
+builder.Services.AddScoped<ISovietTanksRepository, SovietTankRepository>();
 builder.Services.AddScoped<IEditorialRepository, EditorialRepository>();
 builder.Services.AddAutoMapper(typeof(ApplicationMapper));
 //Logger setup

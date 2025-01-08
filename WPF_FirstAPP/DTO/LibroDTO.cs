@@ -6,11 +6,13 @@ namespace WPF_FirstAPP.DTO
     {
         [JsonPropertyName("id")]
         public int Id { get; set; }
-        [JsonPropertyName("titulo")]
+        [JsonPropertyName("name")]
         public string Titulo { get; set; }
         [JsonPropertyName("isbn")]
         public string ISBN { get; set; }
-        [JsonPropertyName("numPaginas")]
+        [JsonPropertyName("paginas")]
         public int NumPaginas { get; set; }
+        [JsonPropertyName("createdDate")]
+        public DateTime CreatedDate { get; set; }
     }
 }
