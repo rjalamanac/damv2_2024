@@ -44,7 +44,7 @@
             }
 
             [Authorize(Roles = "admin")]
-            [HttpGet("{id:int}")]
+            [HttpGet("{id:int}", Name = "[controller]_GetEntity")]
             [ProducesResponseType(StatusCodes.Status200OK)]
             [ProducesResponseType(StatusCodes.Status404NotFound)]
             public async Task<IActionResult> Get(int id)
@@ -77,7 +77,7 @@
                     await _repository.CreateAsync(entity);
 
                     var dto = _mapper.Map<TDto>(entity);
-                    return CreatedAtRoute("GetEntity", new { id = entity.GetHashCode() }, dto);
+                    return CreatedAtRoute($"{ControllerContext.ActionDescriptor.ControllerName}_GetEntity", new { id = entity.GetHashCode() }, dto);
                 }
                 catch (Exception ex)
                 {
