@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="Assets\applicationIcon-1024.png" />
+		<None Remove="Assets\applicationIcon-256.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Assets\applicationIcon-1024.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Resource>
+		<Resource Include="Assets\applicationIcon-256.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Resource>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.1" />
+		<PackageReference Include="WPF-UI" Version="3.0.5" />
+		<PackageReference Include="WPF-UI.Tray" Version="3.0.4" />
+		<PackageReference Include="WPF-UI.Abstractions" Version="4.0.0-rc.3" />
+		<PackageReference Include="WPF-UI.DependencyInjection" Version="4.0.0-rc.3" />
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.1" />
+	</ItemGroup>
+
+</Project>
