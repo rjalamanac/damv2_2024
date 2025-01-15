@@ -66,13 +66,13 @@ namespace ApiPelicula.Repository
 
         public async Task<bool> CreateAsync(Category category)
         {
+            category.CreatedDate = DateTime.Now;
             _context.Categories.Add(category);
             return await Save();
         }
 
         public async Task<bool> UpdateAsync(Category category)
         {
-            category.CreatedDate = DateTime.Now;
             _context.Update(category);
             return await Save();
         }
