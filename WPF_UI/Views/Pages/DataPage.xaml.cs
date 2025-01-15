@@ -17,8 +17,13 @@ public partial class DataPage : INavigableView<ViewModels.DataViewModel>
     public DataPage(ViewModels.DataViewModel viewModel)
     {
         ViewModel = viewModel;
-        DataContext = this;
-
+        DataContext = viewModel;
         InitializeComponent();
+        Loaded += Page_Loaded;
+    }
+
+    private void Page_Loaded(object sender, RoutedEventArgs e)
+    {
+        this.ViewModel.OnNavigatedFromAsync();
     }
 }

@@ -3,6 +3,7 @@
 // Copyright (C) Leszek Pomianowski and WPF UI Contributors.
 // All Rights Reserved.
 
+using System.Collections.ObjectModel;
 using System.Windows.Media;
 using Wpf.Ui.Demo.Mvvm.Models;
 
@@ -13,15 +14,22 @@ public partial class DataViewModel : ViewModel
     private bool _isInitialized = false;
 
     [ObservableProperty]
-    private List<DataColor> _colors = [];
+    private ObservableCollection<DataColor> _colors = [];
 
-    public override void OnNavigatedTo()
+    public DataViewModel()
+    {
+
+    }
+
+    public override Task OnNavigatedFromAsync()
     {
         if (!_isInitialized)
         {
             InitializeViewModel();
         }
+        return base.OnNavigatedFromAsync();
     }
+
 
     private void InitializeViewModel()
     {
