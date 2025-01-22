@@ -87,7 +87,7 @@
             }
 
             [Authorize(Roles = "admin")]
-            [HttpPatch("{id:int}")]
+            [HttpPut("{id:int}")]
             [ProducesResponseType(StatusCodes.Status200OK)]
             [ProducesResponseType(StatusCodes.Status404NotFound)]
             public async Task<IActionResult> Update(int id, [FromBody] TDto dto)
