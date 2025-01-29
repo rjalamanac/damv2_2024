@@ -1,7 +1,7 @@
-using ApiPelicula.AutoMapper;
-using ApiPelicula.Data;
-using ApiPelicula.Repository;
-using ApiPelicula.Repository.IRepository;
+using RestAPI.AutoMapper;
+using RestAPI.Data;
+using RestAPI.Repository;
+using RestAPI.Repository.IRepository;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -29,6 +29,7 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<ILibroRepository, LibroRepository>();
 builder.Services.AddScoped<ISovietTanksRepository, SovietTankRepository>();
 builder.Services.AddScoped<IEditorialRepository, EditorialRepository>();
+builder.Services.AddScoped<IHouseRepository, HouseRepository>();
 builder.Services.AddAutoMapper(typeof(ApplicationMapper));
 //Logger setup
 builder.Logging.ClearProviders();

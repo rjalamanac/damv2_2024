@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ApiPelicula.Models.DTOs.CategoryDto
+namespace RestAPI.Models.DTOs.CategoryDto
 {
     public class CreateCategoryDto
     {

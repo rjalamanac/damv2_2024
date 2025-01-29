@@ -1,6 +1,6 @@
-﻿using ApiPelicula.Data;
-using ApiPelicula.Models.DTOs.UserDto;
-using ApiPelicula.Repository.IRepository;
+﻿using RestAPI.Data;
+using RestAPI.Models.DTOs.UserDto;
+using RestAPI.Repository.IRepository;
 using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
@@ -10,7 +10,7 @@ using System.Text;
 using System.Security.Cryptography;
 using RestAPI.Models.Entity;
 
-namespace ApiPelicula.Repository
+namespace RestAPI.Repository
 {
     public class UserRepository : IUserRepository
     {

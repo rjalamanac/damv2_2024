@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace ApiPelicula.Models.DTOs
+namespace RestAPI.Models.DTOs
 {
     public class ResponseApi
     {

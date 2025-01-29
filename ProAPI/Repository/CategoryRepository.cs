@@ -1,11 +1,11 @@
-﻿using ApiPelicula.Data;
-using ApiPelicula.Repository.IRepository;
+﻿using RestAPI.Data;
+using RestAPI.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using RestAPI.Models.Entity;
 using System.Diagnostics;
 
-namespace ApiPelicula.Repository
+namespace RestAPI.Repository
 {
     public class CategoryRepository : ICategoryRepository
     {

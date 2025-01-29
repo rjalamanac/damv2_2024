@@ -1,14 +1,14 @@
-﻿using ApiPelicula.Models.DTOs;
-using ApiPelicula.Models.DTOs.CategoryDto;
-using ApiPelicula.Models.DTOs.UserDto;
-using ApiPelicula.Repository;
-using ApiPelicula.Repository.IRepository;
+﻿using RestAPI.Models.DTOs;
+using RestAPI.Models.DTOs.CategoryDto;
+using RestAPI.Models.DTOs.UserDto;
+using RestAPI.Repository;
+using RestAPI.Repository.IRepository;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace ApiPelicula.Controllers
+namespace RestAPI.Controllers
 {
     [Route("api/users")]
     [ApiController]

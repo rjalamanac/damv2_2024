@@ -1,4 +1,4 @@
-﻿using ApiPelicula.Data;
+﻿using RestAPI.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
 using RestAPI.Models.Entity;

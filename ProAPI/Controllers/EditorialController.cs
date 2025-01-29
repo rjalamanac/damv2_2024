@@ -1,4 +1,4 @@
-﻿using ApiPelicula.Repository.IRepository;
+﻿using RestAPI.Repository.IRepository;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using RestAPI.Controllers.RestAPI.Controllers;

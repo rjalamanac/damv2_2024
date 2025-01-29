@@ -1,7 +1,7 @@
-﻿using ApiPelicula.Models.DTOs.UserDto;
+﻿using RestAPI.Models.DTOs.UserDto;
 using RestAPI.Models.Entity;
 
-namespace ApiPelicula.Repository.IRepository
+namespace RestAPI.Repository.IRepository
 {
     public interface IUserRepository
     {

@@ -2,7 +2,7 @@
 using RestAPI.Repository;
 
 
-namespace ApiPelicula.Repository.IRepository
+namespace RestAPI.Repository.IRepository
 {
     public interface ILibroRepository : IRepository<LibroEntity>
     {

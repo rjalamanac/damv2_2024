@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using RestAPI.Models.Entity;
 
-namespace ApiPelicula.Data
+namespace RestAPI.Data
 {
     public class ApplicationDbContext : IdentityDbContext<AppUser>
     {
@@ -21,6 +21,7 @@ namespace ApiPelicula.Data
         public DbSet<LibroEntity> Libros { get; set; }
         public DbSet<EditorialEntity> Editoriales { get; set; }
         public DbSet<SovietTankEntity> SovietTanks { get;set; }
+        public DbSet<HouseEntity> Houses { get;set; }
 
     }
 }

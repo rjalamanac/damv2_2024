@@ -1,10 +1,8 @@
 ﻿using RestAPI.Models.Entity;
 using RestAPI.Repository;
-
-
 namespace RestAPI.Repository.IRepository
 {
-    public interface ICategoryRepository : IRepository<Category>
+    public interface IHouseRepository : IRepository<HouseEntity>
     {
 
     }

@@ -1,5 +1,5 @@
-﻿using ApiPelicula.Models.DTOs.CategoryDto;
-using ApiPelicula.Repository.IRepository;
+﻿using RestAPI.Models.DTOs.CategoryDto;
+using RestAPI.Repository.IRepository;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -9,7 +9,7 @@ using RestAPI.Controllers.RestAPI.Controllers;
 using RestAPI.Models.Entity;
 using System.Diagnostics;
 
-namespace ApiPelicula.Controllers
+namespace RestAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
