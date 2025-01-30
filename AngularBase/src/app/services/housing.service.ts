@@ -6,13 +6,18 @@ import { HousingLocation } from '../models/housinglocation';
 })
 export class HousingService {
   housingLocationList: HousingLocation[];
-  readonly baseUrl = 'https://localhost:7777/api/House';
+  readonly baseUrl = 'http://localhost:5072/api/House';
   constructor() {
     this.housingLocationList= [];
+
    }
 
    async getAllHousingLocations(): Promise<HousingLocation[]> {
-    const data = await fetch(this.baseUrl);
+    let headers = new Headers();
+    headers.append('Authorization', 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkJpbWJhX0pvZ2EiLCJyb2xlIjoiYWRtaW4iLCJuYmYiOjE3MzgyNjQ3MTYsImV4cCI6MTczODI2NTEzNiwiaWF0IjoxNzM4MjY0NzE2fQ.0aj1ScoIed0ULksXfUel8MxbVWDlYTiUQGgYl2FHPkI');
+    const data = await fetch(this.baseUrl,{method:'GET',
+      headers: headers,
+     });
     return (await data.json()) ?? [];
   }
 
