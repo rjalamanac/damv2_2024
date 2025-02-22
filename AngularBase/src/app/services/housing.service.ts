@@ -7,28 +7,61 @@ import { HousingLocation } from '../models/housinglocation';
 export class HousingService {
   housingLocationList: HousingLocation[];
   readonly baseUrl = 'http://localhost:5072/api/House';
+  readonly authUrl = 'http://localhost:5072/api/users/login';
+  private token: string | null = null;
+
   constructor() {
-    this.housingLocationList= [];
+    this.housingLocationList = [];
+  }
 
-   }
+  async login(username: string, password: string): Promise<boolean> {
+    const response = await fetch(this.authUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ UserName: username, Password: password })
+    });
 
-   async getAllHousingLocations(): Promise<HousingLocation[]> {
-    let headers = new Headers();
-    headers.append('Authorization', 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkJpbWJhX0pvZ2EiLCJyb2xlIjoiYWRtaW4iLCJuYmYiOjE3MzgyNjQ3MTYsImV4cCI6MTczODI2NTEzNiwiaWF0IjoxNzM4MjY0NzE2fQ.0aj1ScoIed0ULksXfUel8MxbVWDlYTiUQGgYl2FHPkI');
-    const data = await fetch(this.baseUrl,{method:'GET',
-      headers: headers,
-     });
-    return (await data.json()) ?? [];
+    if (!response.ok) {
+      console.error('Login failed');
+      return false;
+    }
+
+    const responseData = await response.json();
+    this.token = responseData?.result?.token ?? null;
+    return this.token !== null;
+  }
+
+  async getAllHousingLocations(): Promise<HousingLocation[]> {
+    if (!this.token) {
+      console.error('User is not authenticated');
+      await this.login("Bimba_Joga", "u76x&s~:vtDVX*[4%#")
+    }
+
+    const response = await fetch(this.baseUrl, {
+      method: 'GET',
+      headers: { 'Authorization': `Bearer ${this.token}` }
+    });
+
+    return (await response.json()) ?? [];
   }
 
   async getHousingLocationById(id: number): Promise<HousingLocation | undefined> {
-    const data = await fetch(`${this.baseUrl}/${id}`);
-    return (await data.json()) ?? {};
+    if (!this.token) {
+      console.error('User is not authenticated');
+      return undefined;
+    }
+
+    const response = await fetch(`${this.baseUrl}/${id}`, {
+      method: 'GET',
+      headers: { 'Authorization': `Bearer ${this.token}` }
+    });
+
+    return (await response.json()) ?? undefined;
   }
 
   submitApplication(firstName: string, lastName: string, email: string) {
     console.log(
-      `Homes application received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`,
+      `Homes application received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`
     );
   }
 }

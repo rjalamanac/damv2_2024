@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "a388628c-62e1-4a7c-99dd-42e481362484",
+		"_postman_id": "2a516f34-2483-4e63-870a-1a6b994d47f2",
 		"name": "API PRO",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "40877822"
+		"_exporter_id": "19289059"
 	},
 	"item": [
 		{
@@ -64,44 +64,169 @@
 			]
 		},
 		{
-			"name": "Tankes",
+			"name": "Request",
 			"item": [
 				{
-					"name": "Obtener Tankes",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{API_URL}}SovietTank",
-							"host": [
-								"{{API_URL}}SovietTank"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Crear Tanke",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"ETHAN 2005 SUFRIDO HTML PRIPT MIERCOLES\",\r\n    \"damage\": -10,\r\n    \"Bastidor\": \"SIN RUEDAS Y CUESTA ABAJO\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "Libros",
+					"item": [
+						{
+							"name": "Obtener Libros",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}Libro",
+									"host": [
+										"{{API_URL}}Libro"
+									]
 								}
+							},
+							"response": []
+						},
+						{
+							"name": "Crear Libro",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Name\": \"Mitankityko\",\r\n    \"Paginas\": 1000,\r\n    \"isbn\": \"PUTIN_32\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}Libro",
+									"host": [
+										"{{API_URL}}Libro"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"auth": {
+						"type": "bearer",
+						"bearer": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkJpbWJhX0pvZ2EiLCJyb2xlIjoiYWRtaW4iLCJuYmYiOjE3MzYzNTMzMzgsImV4cCI6MTczNjk1ODEzOCwiaWF0IjoxNzM2MzUzMzM4fQ.tNJLlPmxiJGlPaYfCLWTwVt5zLbYqdj7oXjf-GcKvd0",
+								"type": "string"
+							}
+						]
+					},
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
 							}
 						},
-						"url": {
-							"raw": "{{API_URL}}SovietTank",
-							"host": [
-								"{{API_URL}}SovietTank"
-							]
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
 						}
-					},
-					"response": []
+					]
+				},
+				{
+					"name": "Houses",
+					"item": [
+						{
+							"name": "Obtener houses",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{API_URL}}House",
+									"host": [
+										"{{API_URL}}House"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create House 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Acme Fresh Start Housing\",\r\n    \"city\": \"Chicago\",\r\n    \"state\": \"IL\",\r\n    \"photo\": \"https://angular.dev/assets/images/tutorials/common/bernard-hermant-CLKGGwIBTaY-unsplash.jpg\",\r\n    \"availableUnits\": 4,\r\n    \"wifi\": true,\r\n    \"laundry\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}House",
+									"host": [
+										"{{API_URL}}House"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create House 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Homesteady Housing\",\r\n    \"city\": \"Chicago\",\r\n    \"state\": \"IL\",\r\n    \"photo\": \"https://angular.dev/assets/images/tutorials/common/ian-macdonald-W8z6aiwfi1E-unsplash.jpg\",\r\n    \"availableUnits\": 2,\r\n    \"wifi\": true,\r\n    \"laundry\": false\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}House",
+									"host": [
+										"{{API_URL}}House"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create House 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Warm Beds Housing Support\",\r\n    \"city\": \"Juneau\",\r\n    \"state\": \"AK\",\r\n    \"photo\": \"https://angular.dev/assets/images/tutorials/common/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg\",\r\n    \"availableUnits\": 1,\r\n    \"wifi\": false,\r\n    \"laundry\": false\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{API_URL}}House",
+									"host": [
+										"{{API_URL}}House"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			],
 			"auth": {
@@ -109,81 +234,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkJpbWJhX0pvZ2EiLCJyb2xlIjoiYWRtaW4iLCJuYmYiOjE3MzYzNTMzMzgsImV4cCI6MTczNjk1ODEzOCwiaWF0IjoxNzM2MzUzMzM4fQ.tNJLlPmxiJGlPaYfCLWTwVt5zLbYqdj7oXjf-GcKvd0",
-						"type": "string"
-					}
-				]
-			},
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"type": "text/javascript",
-						"packages": {},
-						"exec": [
-							""
-						]
-					}
-				}
-			]
-		},
-		{
-			"name": "Libros",
-			"item": [
-				{
-					"name": "Obtener Libros",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{API_URL}}Libro",
-							"host": [
-								"{{API_URL}}Libro"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Crear Libro",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"Name\": \"Mitankityko\",\r\n    \"Paginas\": 1000,\r\n    \"isbn\": \"PUTIN_32\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{API_URL}}Libro",
-							"host": [
-								"{{API_URL}}Libro"
-							]
-						}
-					},
-					"response": []
-				}
-			],
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkJpbWJhX0pvZ2EiLCJyb2xlIjoiYWRtaW4iLCJuYmYiOjE3MzYzNTMzMzgsImV4cCI6MTczNjk1ODEzOCwiaWF0IjoxNzM2MzUzMzM4fQ.tNJLlPmxiJGlPaYfCLWTwVt5zLbYqdj7oXjf-GcKvd0",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkJpbWJhX0pvZ2EiLCJyb2xlIjoiYWRtaW4iLCJuYmYiOjE3NDAyNTA4MjcsImV4cCI6MTc0MDI1MTI0NywiaWF0IjoxNzQwMjUwODI3fQ.YUsHBk1laA-bTUfMt0SrZCHXgPEdY06fPE9fDgNGl_A",
 						"type": "string"
 					}
 				]
@@ -237,7 +288,7 @@
 	"variable": [
 		{
 			"key": "API_URL",
-			"value": "\nhttps://localhost:7777/api/",
+			"value": "",
 			"type": "string"
 		}
 	]
