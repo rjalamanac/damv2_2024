@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "2a516f34-2483-4e63-870a-1a6b994d47f2",
+		"_postman_id": "1391e2ac-02a4-4789-a5b2-b84a8869185f",
 		"name": "API PRO",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "19289059"
@@ -234,7 +234,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkJpbWJhX0pvZ2EiLCJyb2xlIjoiYWRtaW4iLCJuYmYiOjE3NDAyNTA4MjcsImV4cCI6MTc0MDI1MTI0NywiaWF0IjoxNzQwMjUwODI3fQ.YUsHBk1laA-bTUfMt0SrZCHXgPEdY06fPE9fDgNGl_A",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IkJpbWJhX0pvZ2EiLCJyb2xlIjoiYWRtaW4iLCJuYmYiOjE3NDAyNTIwNTksImV4cCI6MTc0MDI1MjQ3OSwiaWF0IjoxNzQwMjUyMDU5fQ.WYJuH2ANDALHOAK1H0iQ-UTerlRaT_OqHfyrEDm4sRw",
 						"type": "string"
 					}
 				]
