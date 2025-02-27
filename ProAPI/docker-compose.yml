@@ -1,0 +1,43 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://*:8080
+      - ConnectionStrings__SqlConnection=Server=db;Database=Basic;User=AppUserLogin;Password=e.d_fwm2()~37hz?+LBT4V;TrustServerCertificate=True
+    depends_on:
+      - db
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sql_server_di
+    ports:
+      - "1433:1433"
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=wnD/LbJq?X39t,}-628%)
+    volumes:
+      - sql_server_volume:/var/opt/mssql
+    restart: always
+    healthcheck:
+      test: [ "CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"wnD/LbJq?X39t,}-628%)\" -Q \"SELECT 1\"" ]
+      interval: 10s
+      retries: 10
+      start_period: 10s
+      timeout: 3s
+  db.configurator:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    volumes:
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    depends_on:
+      db:
+        condition: service_healthy
+    command: >
+      bash -c ' /opt/mssql-tools18/bin/sqlcmd -S sqlserver -U sa -P wnD/LbJq?X39t,}-628%) -d master -i docker-entrypoint-initdb.d/init.sql; echo "All done!"; '
+
+volumes:
+  sql_server_volume:
